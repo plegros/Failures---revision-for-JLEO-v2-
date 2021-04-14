@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: chicago.bst
+Database file #1: bibliography.bib
+Warning--I didn't find a database entry for "azoulay2018age"
+Warning--page numbers missing in canidio2016
+Warning--no volume for gottshalkGreene2012
+Warning--page numbers missing in gottshalkGreene2012
+Warning--no number and no volume in gromb_entrepreneurship_2002
+Warning--page numbers missing in gromb_entrepreneurship_2002
+Warning--no number and no volume in landier_entrepreneurship_2005
+Warning--page numbers missing in landier_entrepreneurship_2005
+Warning--no number and no volume in lazear2004balanced
+Warning--no number and no volume in macdonald1982information
+Warning--no number and no volume in macdonald1982market
+Warning--no number and no volume in pastorino2013careers
+Warning--page numbers missing in pastorino2013careers
+You've used 42 entries,
+            2861 wiz_defined-function locations,
+            872 strings with 10889 characters,
+and the built_in function-call counts, 28549 in all, are:
+= -- 2471
+> -- 1990
+< -- 2
++ -- 594
+- -- 714
+* -- 2529
+:= -- 5204
+add.period$ -- 126
+call.type$ -- 42
+change.case$ -- 290
+chr.to.int$ -- 41
+cite$ -- 54
+duplicate$ -- 746
+empty$ -- 1752
+format.name$ -- 830
+if$ -- 5252
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 43
+newline$ -- 212
+num.names$ -- 418
+pop$ -- 186
+preamble$ -- 1
+purify$ -- 543
+quote$ -- 0
+skip$ -- 825
+stack$ -- 0
+substring$ -- 1629
+swap$ -- 242
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 806
+warning$ -- 12
+while$ -- 442
+width$ -- 0
+write$ -- 549
+(There were 13 warnings)
