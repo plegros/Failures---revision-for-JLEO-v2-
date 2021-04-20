@@ -187,7 +187,7 @@ Note that the value of $\beta$ affects $k^E(\alpha)$ only for $\alpha>\alpha^F(\
 
 
 
-\subsection{The case of $\beta=1$.} In this case no firm is short-termist. As we have seen, $k^A(\alpha)$ is increasing and $k^E(\alpha)$ is a decreasing function of $\alpha$. It is always the case that $k^E(1)<k^A(1)$, but whether or not $k^E(0)>k^A(0)$ depends on the option $\Delta$.
+\subsection{No Contracting Friction: $\beta=1$.} In this case no firm is short-termist. As we have seen, $k^A(\alpha)$ is increasing and $k^E(\alpha)$ is a decreasing function of $\alpha$. It is always the case that $k^E(1)<k^A(1)$, but whether or not $k^E(0)>k^A(0)$ depends on the option $\Delta$.
 
 Assume by way of contradiction that  $k^E(1)> k^A(1)$. Hence the marginal entrepreneur will choose not to experiment and do task $B$. Therefore \eqref{kE} implies that 
 %
@@ -205,7 +205,7 @@ At $\alpha=0$, if $k^E(0)<k^A(0)$, the marginal entrepreneur does task $A$ and t
 \end{align*}
 which is indeed smaller that $k^A(0):=\theta \E k$ only if $\theta$ is high enough
 %
-\begin{lemma}
+\begin{lemma}\label{lem:beta=1}
     If $\beta=1$, 
     \begin{enumerate}[(i)]
         \item (High Learning Benefit) When $1+\frac{\sigma_2(A)}{\sigma_1(A)}\Delta<\theta \E k$, the marginal entrepreneur $k^E(\alpha)$ does task $A$ for any value of $\alpha$.
@@ -214,7 +214,7 @@ which is indeed smaller that $k^A(0):=\theta \E k$ only if $\theta$ is high enou
 \end{lemma}
 %
 \begin{proof}
-    In a high learning environement, $k^E(0)<k^A(0)$ together with $k^E$ decreasing and $k^A$ increasing in $\alpha$ proves the result.
+    In a high learning environment, $k^E(0)<k^A(0)$ together with $k^E$ decreasing and $k^A$ increasing in $\alpha$ proves the result.
 
     In a low learning environment, since $k^E(0)>k^A(0)$ while $k^E(1)<k^A(1)$ and the two functions have opposite monotonicity, there exists a unique value $\alpha^*$ solving $k^E(\alpha^*)= k^A(\alpha^*)$. 
 \end{proof}
@@ -267,7 +267,21 @@ A small value of $\lambda$ means that the average project of individuals has low
 \paragraph{Bottom line: we should not make a big deal of non-monotonicity due to $\beta<1$....}
 
 At the same time, there are no learning entrepreneurs, so entrepreneurs who go back to employment have learn less ($\sigma_2(\tau_1)\leq \sigma_2(A))$ than workers and therefore will fetch a lower wage on the market. By contrast, when $\beta<1$ and $\alpha>\alpha^F(\beta)$, learning entrepreneurs fetch more than previous workers when they go back to employment.
+
+
+\subsection{Contracting Friction: $\beta<1$}
  
+ (( random notes, to be cleaned ))
+ 
+As there are contracting frictions, firms are short-termists when $\alpha>\alpha^F(\beta)$. For $\alpha<\alpha^F(\beta)$, firms behave as if there were no contracting frictions and experiment. It follows that in this range the occupational choice of individuals is unchanged by contracting frictions. When firms are short-termist, occupational choices are changed because the payoff under employment is now lower than in the case $\beta=1$.
+
+While $k^A(\alpha)$ is unchanged -- conditional on entrepreneurship, the individuals chooses task $A$ only if his project value is less than $k^A(\alpha)$ -- the value of $k^E(\alpha)$ will decrease, but  the variation of $k^E(\alpha)$ will be affected. It is convenient at this point to explicitly refer to $\beta$ in addition to $\alpha$ in the value of the marginal project. Hence, let $k^E(\alpha,\beta)$ denote the value of the marginal project for which a first period entrepreneur is indifferent between the two tasks. 
+
+The difference $k^E(\alpha,1)-k^E(\alpha,\beta)$ is strictly positive for $\beta<1$ and $\alpha>\alpha^F(\beta)$, hence there are more entrepreneurs as contracting frictions increase ($\beta$ decreases). 
+
+If contracting frictions are low ($\alpha^F(\beta)>\alpha^*$ (Lemma \ref{lem:beta=1}), for $\alpha>\alpha^F(\beta)$, the new entrepreneurs are those who draw projects in $k^E(\alpha,\beta),k^E(\alpha,1))$ and those choose task $A$, as would the marginal $k^E(\alpha,1)$ would in the absence of contracting frictions.Hence the slope of $k^E(\alpha,\beta)$ is the same as the slope of $k^E(\alpha,\beta)$. However, the ratio $\frac{F(k^E(\alpha,\beta)}{f(k^E(\alpha,\beta)}$ decreases with $\beta$, and therefore the measure of entrepreneurs is more responsive to changes in $\alpha$ as $\beta$ decreases.
+
+If contracting frictions are high ($\alpha^F(\beta)<\alpha^*$, among the new entrepreneurs, the marginal entrepreneur may do $B$ for $\alpha$ close to $\alpha^*$, but for higher values of $\alpha$, the cross effect is more complex. If $\alpha>\alpha^*$, we still have a higher variation in the measure of entrepreneurs with than without contracting imperfections. If $\alpha$ is closer to $\alpha^F(\beta)$ however, it is possible that the marginal entrepreneur does task $A$ while the marginal entrepreneur does $B$ when $\beta=1$. Then, the absolute variation of $k^E(\alpha,\beta)$ is equal to $\frac{\sigma_2(A)}{\sigma_1(A)}w(\alpha)$ when $\beta<1$, and is greater than absolute variation   $\frac{\sigma_2(B)}{\sigma_1(B)}w(\alpha)$ of the marginal entrepreneur when $\beta=1$.
 
 
  
@@ -275,4 +289,3 @@ At the same time, there are no learning entrepreneurs, so entrepreneurs who go b
 
 
 \end{document}
-
