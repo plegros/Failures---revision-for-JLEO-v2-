@@ -1,0 +1,278 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[12pt]{article} 
+\usepackage{tikz}
+
+%\usepackage{xcolor}
+%\usepackage{hyperref}
+%\usepackage{subfig}
+%\usepackage{xltxtra} 
+\usepackage{enumerate}
+
+%\synctex=1
+\usepackage{amsmath,amsthm,amssymb,amsfonts} 
+\usepackage{graphicx} 
+\usepackage[center]{caption} 
+\usepackage{enumerate} 
+\usepackage[shortlabels]{enumitem} 
+\setlength {\marginparwidth}{2cm}
+\usepackage[obeyDraft,colorinlistoftodos]{todonotes} 
+\usepackage[onehalfspacing]{setspace}
+
+%\usepackage{fontspec}
+%\usepackage{xunicode}
+%\usepackage{xltxtra} \synctex=1 
+\usepackage{natbib} 
+\usepackage{subcaption} 
+\usepackage[onehalfspacing]{setspace}
+
+%\usepackage[round]{natbib}
+%\usepackage[all]{xy}
+%\setcounter{MaxMatrixCols}{10}
+%
+\renewcommand{\l}{\ell}
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}{Acknowledgement}
+\newtheorem{algorithm}{Algorithm}
+\newtheorem{assumption}{Assumption}
+\newtheorem{axiom}{Axiom}
+\newtheorem{case}{Case}
+\newtheorem{claim}{Claim}
+\newtheorem{conclusion}{Conclusion}
+\newtheorem{condition}{Condition}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{corollary}{Corollary}
+\newtheorem{criterion}{Criterion}
+\newtheorem{example}{Example}
+\newtheorem{exercise}{Exercise}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition} \theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{notation}{Notation}
+\newtheorem{problem}{Problem} \theoremstyle{remark}
+\newtheorem{remark}{Remark}
+\newtheorem{fact}{Fact}
+\newtheorem{solution}{Solution}
+\newtheorem{summary}{Summary}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary} 
+\usepackage[toc,page]{appendix} 
+%\usepackage{epstopdf}
+
+\newcommand{\E}[1]{\mathbb E[#1]}
+
+\begin{document} 
+\title{} 
+\author{Patrick Legros} 
+\date{\today} 
+\maketitle
+
+\section{The Model}
+Let 
+%
+\begin{equation}\label{learning}
+    \theta :=\frac{\sigma_2(A)-\sigma_2(B)}{\sigma_1(B)-\sigma_1(A)}   
+\end{equation}
+%
+be the learning index.  The continuation value of an entrepreneur is 
+%
+\begin{equation*}
+    w(\alpha):= \alpha \E{\max(k,1)} +(1-\alpha)\E {k}   
+\end{equation*}
+%
+and can be rewritten as 
+%
+\begin{equation}\label{continuation_value}
+w(\alpha)=\E k +\alpha \Delta 
+\end{equation}
+%
+where $\Delta$ is 
+\begin{equation}\label{option-value}
+    \Delta:=\E{\max(k,1)} -\E {k}.
+\end{equation}
+
+The continuation value of a worker is equal to $w(1)$.
+%
+We assume that doing task $A$ is efficient from an expected total output perspective when an agent is hired in a firm: hence, $\sigma_1(A)+\sigma_2(A)w(1)> \sigma_1(B)+\sigma_2(B)w(1)$.
+
+\begin{assumption}\label{A-efficient}
+    Task $A$ in the first period maximizes the two-period expected output of a worker in a firm:
+    %
+    \[
+  \theta  w(1)>1.  
+    \]
+    %
+\end{assumption}
+%
+We assume that $F(k)$ satisfies the following hazard rate condition.
+\begin{assumption}\label{ass:hazard-rate}
+    $\frac{F(k)}{f(k)}$ is a non-decreasing function of $k$.
+\end{assumption}
+
+%
+\paragraph{Incentive of firms}
+Firms capture a second period profit only if a worker does not get offers, hence gets $\sigma_1(\tau)(1-\beta)+(1-\alpha)\sigma_2(\tau)\E{\max(1-k,0)}$ since the residual profit in the second period of a firm is $1$ minus the compensation that needs to be paid to workers to compensate for their second period outside option of $k$. [Btw, we need to assume that the $k$ projects are short lived? Otherwise an entrepreneur in the second period has a project which yields in expection $\E{\max(k_1,k_2)}]$ since he can always continue his initial project...]
+%
+Now, $\E{\max(1-k,0)}=1-\E{\min(k,1)}$. A firm is therefore willing to implement task $A$ in the first period of employment when
+%
+\begin{equation}
+    \alpha \leq \alpha^F(\beta):=1-\theta  (1-\beta)\E{\max(1-k,0)}.
+\end{equation}
+%
+\begin{remark}
+    A sufficient condition for $\alpha^F$ to be less than zero is that
+    %
+    \[
+\beta < 1-  \frac{1}{\theta\E{\max(1-k,0)}}  
+    \]
+    %
+    under this conditions, firms are short-termist for any labor market condition. If the condition fails, firms are shot termist only if $\alpha\in(\alpha^F,1]$. If $\theta  \E{\max(1-k,0)}$ is greater than one, then there exists $\beta^*$ such that firms are shortermist if $\alpha>\alpha^F(\beta)$ and $\beta>\beta^*$.
+\end{remark}
+%
+\begin{proposition}
+ Firms are short termist if $\alpha >\alpha^F(\beta)$.
+\end{proposition}
+%
+\paragraph{Incentives of agents}
+Agents who contemplate entrepreneurship in the first period anticipate the optimal task they will use upon entrepreneurship as a function of their project. Choosing $A$ is best if 
+%
+\[
+    \sigma_1(A)k+\sigma_2(A)w(\alpha)\geq \sigma_1(B)k+\sigma_2(B)w(\alpha),
+\]
+%
+or
+\begin{equation}\label{IC-agent}
+    k\leq k^A(\alpha):=\theta   w(\alpha).
+\end{equation}
+%
+The optimal task $\tau^A(k)$ is then
+%
+\[
+\tau^A(k):=\begin{cases}
+    A & \text{ if } k\leq \theta  w(\alpha)\\ 
+    B & \text{ if } k\geq \theta  w(\alpha).
+\end{cases}
+\]
+%
+Agents are \emph{willing} to be entrepreneurs if employment yields a lower surplus. Let $\tau^F=B$ if, and only if, firms are shorttermists. Then an agent is willing to become an entrepreneur when 
+%
+\[
+    \sigma_1(\tau^A(k))k+\sigma_2(\tau^A(k))w(\alpha)\geq \sigma_1(\tau^F)+\sigma_2(\tau^F) w(1)
+\]
+%
+of 
+%
+\begin{equation}\label{kE}
+k\geq k^E(\alpha):=\frac{\sigma_1(\tau^F)+\sigma_2(\tau^F)w(1)}{\sigma_1(\tau^A(k))}-\frac{\sigma_2(\tau^A(k))}{\sigma_1(\tau^A(k))}w(\alpha).
+\end{equation}
+%
+For consistency, if $k^E(\alpha)<k^A(\alpha)$, it must be the case that $\tau^A(k^E(\alpha))=A$, and otherwise, if $k^E(\alpha)>k^A(\alpha)$, that $\tau^A(k^E(\alpha))=B$.
+
+\paragraph{Discontinuity at $\alpha^F(\beta)$.} There is a discountinuity at $\alpha^F(\beta)$ because the value of being an entrepreneur is continuous in $\alpha$ but the option of being a worker discontinually changes at $\alpha^F(\beta)$, hence the value of being an entrepreneur must increase by a first-order at $\alpha^F$. 
+
+It should be clear that $k^A(\alpha)$ is an increasing function of $\alpha$ -- as $\alpha$ increases, the continuation value $w(\alpha)$ of an entrepreneur increases and therefore experimenting by doing $A$ is less costly. By the same logic, $k^E(\alpha)$ is a decreasing function of $\alpha$ -- as $\alpha$ increases, the risk of entreprenurial activity (losing the option to work in a firm tomorrow) is lower and therefore individuals are more willing to be entrepreneurs.
+
+\paragraph{Entrepreneurship activity.} The measure of entrepreneurs is equal to $1-\alpha+\alpha \text{Pr}[k\geq k^E(\alpha)]=1-\alpha F(k^E(\alpha))$. Therefore the variation with respect to $\alpha$ is $-(F(k^E(\alpha))+\alpha \frac{dk^E(\alpha)}{d\alpha}f(k^E(\alpha)))$. 
+
+\begin{proposition}\label{prop:change-ent}
+    As $\alpha\neq \alpha^F(\beta)$, the measure of entrepreneurs increases with $\alpha$ if and only if
+    \begin{equation*}
+      -\alpha \frac{dk^E(\alpha)}{d\alpha}\geq \frac{F(k^E(\alpha))}{f(k^E(\alpha))}.
+    \end{equation*}
+\end{proposition}
+%
+Note that the value of $\beta$ affects $k^E(\alpha)$ only for $\alpha>\alpha^F(\beta)$, that is when firms are short-termist for $\beta<1$ and $\alpha\in(\alpha^F(\beta),1]$ while firms are not short-termist in this range when $\beta=1$.
+
+
+
+\subsection{The case of $\beta=1$.} In this case no firm is short-termist. As we have seen, $k^A(\alpha)$ is increasing and $k^E(\alpha)$ is a decreasing function of $\alpha$. It is always the case that $k^E(1)<k^A(1)$, but whether or not $k^E(0)>k^A(0)$ depends on the option $\Delta$.
+
+Assume by way of contradiction that  $k^E(1)> k^A(1)$. Hence the marginal entrepreneur will choose not to experiment and do task $B$. Therefore \eqref{kE} implies that 
+%
+\begin{align*}
+    k^E(1)&=\frac{\sigma_1(A)+(\sigma_2(A)-\sigma_2(B))w(1)}{\sigma_1(B)}\\ 
+    &= \frac{\sigma_1(A)+(\sigma_1(B)-\sigma_1(A))\theta  w(1)}{\sigma_1(B)}\\ 
+    &=\frac{\sigma_1(A)}{\sigma_1(B)}+\left(1-\frac{\sigma_1(A)}{\sigma_1(B)}\right)k^A(1)\\ 
+    &<k^A(1)
+\end{align*}
+where the last inequality follows $k^A(1)>1$ by our assumption \ref{A-efficient} that task $A$ is output efficient in firms. Therefore $k^E(1)<k^A(1)$. Note that when $k^E(\alpha)<k^A(\alpha)$, $k^E(\alpha)=1+\frac{\sigma_2(A)}{\sigma_1(A)}\Delta(1-\alpha)$, hence that $k^E(1)=1$.
+
+At $\alpha=0$, if $k^E(0)<k^A(0)$, the marginal entrepreneur does task $A$ and therefore,
+\begin{align*}
+    k^E(0)&=1+\frac{\sigma_2(A)}{\sigma_1(A)}\Delta\\ 
+\end{align*}
+which is indeed smaller that $k^A(0):=\theta \E k$ only if $\theta$ is high enough
+%
+\begin{lemma}
+    If $\beta=1$, 
+    \begin{enumerate}[(i)]
+        \item (High Learning Benefit) When $1+\frac{\sigma_2(A)}{\sigma_1(A)}\Delta<\theta \E k$, the marginal entrepreneur $k^E(\alpha)$ does task $A$ for any value of $\alpha$.
+        \item (Low Learning Benefit) If $1+\frac{\sigma_2(A)}{\sigma_1(A)}\Delta>\theta \E k$, there exists $\alpha^*$ such that the marginal entrepreneur $k^E(\alpha)$ does $A$ if $\alpha>\alpha^*$ and does $B$ otherwise.
+    \end{enumerate}
+\end{lemma}
+%
+\begin{proof}
+    In a high learning environement, $k^E(0)<k^A(0)$ together with $k^E$ decreasing and $k^A$ increasing in $\alpha$ proves the result.
+
+    In a low learning environment, since $k^E(0)>k^A(0)$ while $k^E(1)<k^A(1)$ and the two functions have opposite monotonicity, there exists a unique value $\alpha^*$ solving $k^E(\alpha^*)= k^A(\alpha^*)$. 
+\end{proof}
+We can now evaluate the change in the measure of entrepreneurs as $\alpha$ varies. In a high learning environment, the condition in Proposition \ref{prop:change-ent} reduces to
+%
+\[
+\alpha \frac{\sigma_2(A)}{\sigma_1(A)}\Delta \geq \frac{F(k^E(\alpha))}{f(k^E(\alpha))}, 
+\]
+%
+By assumption \ref{ass:hazard-rate} and $k^E(\alpha)$ decreasing in $\alpha$, and the displayed condition is more likely to be satisfied the larger $\alpha$ is. At $\alpha=1$, $\frac{F(k^E(\alpha))}{f(k^E(\alpha))}=\frac{F(1)}{f(1)}$. At $\alpha=0$, the condition is clearly violated.
+\begin{lemma}
+    In the high learning environment,
+    \begin{enumerate}[(i)]
+        \item If $\frac{\sigma_2(A)}{\sigma_1(A)}<\frac{F(1)}{f(1)}$, the measure of entrepreneurs is a decreasing function of $\alpha$.
+        \item If $\frac{\sigma_2(A)}{\sigma_1(A)}>\frac{F(1)}{f(1)}$, there exists $\underline \alpha$, such that the measure of entrepreneurs is decreasing on $\alpha\in[0,\underline \alpha]$ and is increasing on $\alpha\in [\underline \alpha,1]$. 
+    \end{enumerate}
+\end{lemma}
+%
+\begin{example}[Uniform Distribution]
+    Suppose that $k\sim U[0,\lambda]$. The hazard rate is equal to $k^E(\alpha)$, independent of the parameter $\lambda$. Because $k^E(1)=1$, the condition in the Lemma for having a non-monotonic relationship is that
+    %
+    \[
+        \frac{\sigma_2(A)}{\sigma_1(A)}<1,
+    \]
+    % 
+    which is not possible. Therefore, for the uniform distribution, the measure of entrepreneurs is a decreasing function of $\alpha$.
+\end{example}
+
+\begin{example}[Exponential Distribution]
+    Suppose that $k$ is exponentially distributed with parameter $\frac{1}{\lambda}$: $F(k)=1-e^{-k/\lambda}$. 
+    %
+    the hazard rate is
+    %
+    \[
+        \frac{F(k)}{f(k)}= e^{\frac{k}{\lambda}-1}
+    \]
+    %
+    and the condition for a local increase of entrepreneurs (remembering that $k^E(1)=1$)
+    %
+    \[
+        \frac{\sigma_2(A)}{\sigma_1(A)}\Delta <e^{\frac{1}{\lambda}-1}
+    \]
+    %
+and there exists $\lambda$ small enough for which the inequality holds.\footnote{%
+A small value of $\lambda$ means that the average project of individuals has low value.
+}
+    %
+\end{example}
+
+\paragraph{Bottom line: we should not make a big deal of non-monotonicity due to $\beta<1$....}
+
+At the same time, there are no learning entrepreneurs, so entrepreneurs who go back to employment have learn less ($\sigma_2(\tau_1)\leq \sigma_2(A))$ than workers and therefore will fetch a lower wage on the market. By contrast, when $\beta<1$ and $\alpha>\alpha^F(\beta)$, learning entrepreneurs fetch more than previous workers when they go back to employment.
+ 
+
+
+ 
+
+
+
+\end{document}
+
