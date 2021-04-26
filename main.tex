@@ -412,13 +412,13 @@ Competition for workers among firms allows us to reduce the firm's problem to th
 \begin{lemma}
 The lifetime utility of a period-1 worker is:
 \begin{align}\label{eq: value worker}
-W^F(\alpha) \equiv
+W^F(\alpha,\beta) \equiv
 \begin{cases}
 \sigma_1(A)+\sigma_2(A) K(1) &\text{ if } \alpha \leq \alpha^F(\beta)\\
 \sigma_1(B)+\sigma_2(B) K(1) &\text{ otherwise }.
 \end{cases}
 \end{align}
-which is constant in $\alpha$ for $\alpha \neq \alpha^F(\beta)$ and has a downward discontinuity at $\alpha=\alpha^F(\beta)$.
+hence is constant in $\alpha$ for $\alpha \neq \alpha^F(\beta)$ and has a downward discontinuity at $\alpha=\alpha^F(\beta)$.
 \end{lemma}
 
 Remember that the efficient task allocation within firm is $\tau_1=A$. This implies that the task allocation within firm is inefficient whenever  $\alpha>\alpha^F(\beta)$. The definition of $\alpha^F(\beta)$ implies the following corollary.
@@ -445,7 +445,7 @@ k^A(\alpha) = \begin{cases}
 \frac{\sigma_1(A)}{\sigma_1(B)}+\frac{\sigma_2(A)}{\sigma_1(B)} K(1)-\frac{\sigma_2(B)}{\sigma_1(B)} K(\alpha)  &\mbox{otherwise. } 
 \end{cases}
 \]
-The second threshold is the project value leaving an agent indifferent between becoming an entrepreneur or a worker \textit{in case firms implement the inefficient task} $\tau_1=B$. We call such threshold $k^B(\alpha)$, implicitly defined as:
+The second threshold is the project value leaving an agent indifferent between becoming an entrepreneur or a worker \textit{in case firms implement the inefficient task} $\tau_1=B$. We call such threshold $k^B(\alpha)$, implicitly defined as the solution of the equation
 \[
  W^E(k^B(\alpha),\alpha) = \sigma_1(B) + \sigma_2(B) K(1),
 \]
@@ -456,15 +456,15 @@ k^B(\alpha)= \begin{cases}
 \frac{\sigma_1(B)}{\sigma_1(A)}+\frac{\sigma_2(B)}{\sigma_1(A)} K(1)-\frac{\sigma_2(A)}{\sigma_1(A)} K(\alpha)  &\mbox{otherwise. } 
 \end{cases}
 \]
-Because the level of labor market frictions determine the task allocation within firms, the project value leaving an agent indifferent between being a worker or an entrepreneur is\todo{maybe we should write $k^E(\alpha,\beta)$? PL:yes}
+Because the level of labor market frictions determine the task allocation within firms, the project value leaving an agent indifferent between being a worker or an entrepreneur is
 \[
-k^E (\alpha)  \equiv 
+k^E (\alpha,\beta)  \equiv 
 \begin{cases}
 k^A(\alpha) &\mbox{if } \alpha \leq \alpha^F(\beta) \\
 k^B(\alpha)  &\mbox{if } \alpha > \alpha^F(\beta)
 \end{cases}
 \]
-Figure \ref{fig:effect-labor} derives $k^A (\alpha)$ and $k^B (\alpha)$ for a given value of $\alpha<1$. Note that, for given $\alpha$, the firm will implement task $A$ when $\beta$ is sufficiently large, and task $B$ when $\beta$ is sufficiently low. Using this, in the graph $k^A (\alpha)$ and $k^B (\alpha)$ are given by the intercept of $W^E(k_1,\alpha)$ and $W^F(\alpha)$ for $\beta'$ such that $\alpha > \alpha^F(\beta')$ and for $\beta''$ such that $\alpha \leq \alpha^F(\beta'')$.
+Figure \ref{fig:effect-labor} derives $k^A (\alpha)$ and $k^B (\alpha)$ for a given value of $\alpha<1$. Note that, for given $\alpha$, the firm will implement task $A$ when $\beta$ is sufficiently large, and task $B$ when $\beta$ is sufficiently low. Using this, in the graph $k^A (\alpha)$ and $k^B (\alpha)$ are given by the intercept of $W^E(k_1,\alpha)$ and $W^F(\alpha,\beta)$ for $\beta'$ such that $\alpha > \alpha^F(\beta')$ and for $\beta''$ such that $\alpha \leq \alpha^F(\beta'')$.
 
 \begin{figure} 
  \centering
@@ -474,9 +474,9 @@ Figure \ref{fig:effect-labor} derives $k^A (\alpha)$ and $k^B (\alpha)$ for a gi
 %\draw[dotted] (0,1)--(6,4);
 %\draw[dotted] (0,2)--(6,3.5);
  % node[midway, sloped, above] {task $A$ in firms}
-\draw[] (0,1)--(6,1) node[right] {\small $W^F(\alpha)_{\alpha > \alpha^F(\beta')}$};
+\draw[] (0,1)--(6,1) node[right] {\small $W^F(\alpha,\beta)_{\alpha > \alpha^F(\beta')}$};
 %node[midway, sloped, above] {task $B$ in firms}
-\draw[] (0,2.2)--(6,2.2) node[right] {\small $W^F(\alpha)_{\alpha \leq \alpha^F(\beta'')}$};
+\draw[] (0,2.2)--(6,2.2) node[right] {\small $W^F(\alpha,\beta)_{\alpha \leq \alpha^F(\beta'')}$};
 
 \draw[dotted](1.55,0)node[below]{$k^B (\alpha)$}--(1.55,1);
 
@@ -497,7 +497,7 @@ Figure \ref{fig:effect-labor} derives $k^A (\alpha)$ and $k^B (\alpha)$ for a gi
 
 
 \end{tikzpicture}
-\caption{Lifetime utility of being an entrepreneur in period 1 ($W^E(k_1,\alpha)$) and lifetime utility of working for a firm in period 1 ($W^F(\alpha)$) as a function of  $k_1$. The graph considers a given value of $\alpha<1$ and two values of $\beta$, one ($\beta'$) sufficiently low so that firms implement task $B$, and the other ($\beta''$) sufficiently high so that firms implement task $A$.    } 
+\caption{Lifetime utility of being an entrepreneur in period 1 ($W^E(k_1,\alpha)$) and lifetime utility of working for a firm in period 1 ($W^F(\alpha,\beta)$) as a function of  $k_1$. The graph considers a given value of $\alpha<1$ and two values of $\beta$, one ($\beta'$) sufficiently low so that firms implement task $B$, and the other ($\beta''$) sufficiently high so that firms implement task $A$.    } 
 \label{fig:effect-labor}
 \end{figure}
 Figure \ref{fig:thresholds} instead plots  $k^A (\alpha)$ (dashed), $k^B (\alpha)$ (dashed) and $k^E(\alpha)$ (solid blue) as a function of $\alpha$. Note a few things. First, the value of working for a firm is higher when firms implement task $A$, which implies that  $k^A (\alpha)>k^B (\alpha)$. It must also be the case that  $k^A (1)=1$: by Assumption  \ref{ass: necessary for learning} an entrepreneur with project value $k_1=1$ chooses to work on task $A$; this entrepreneur is therefore indifferent between working on task $A$ in a firm or as an entrepreneur. Also, both $k^A (\alpha)$ and $k^B (\alpha)$ are continuous and decreasing in $\alpha$.  That is because $K(\alpha)$ increases in $\alpha$, and hence the future payoff of a period-1 entrepreneur increases in $\alpha$. They are also parallel when they are both above or below $K(\alpha)\Omega$. Interestingly, both $k^A (\alpha)$ and $k^B (\alpha)$ decrease faster when they are below $K(\alpha)\Omega$ then when they are above. Mathematically, this is because Assumptions \ref{ass:sigma1} and \ref{ass: necessary for learning} imply that $\frac{\sigma_2(A)}{\sigma_1(A)}>\frac{\sigma_2(B)}{\sigma_1(B)}$. Intuitively, an increase in the period-2 payoff of a period-1 entrepreneur has a larger impact on the entrepreneur's lifetime payoff if this entrepreneur chooses $\tau_1=A$ and hence favors learning in his task allocation. On the other hand, $k^E(\alpha)$ has a downward discontinuity at $\alpha=\alpha^F(\beta)$. Furthermore,  at $\alpha=\alpha^F(\beta)$, $k^E(\alpha)$ will either maintain its slope (when $\alpha^F(\beta)$ is sufficiently large or sufficiently small) or may increase its slope (when $\alpha^F(\beta)$ is in an intermediate range, as drawn in the figure).
@@ -512,9 +512,9 @@ Figure \ref{fig:thresholds} instead plots  $k^A (\alpha)$ (dashed), $k^B (\alpha
 \draw[dashed](8,6)--(6,8)--(0,11)node[left]{$k^A(\alpha)$};
 \draw[dashed](8,3)--(4.5,6.5)--(0,6.5+2.25)node[left]{$k^B(\alpha)$};
 \draw[dotted](5.3,0)node[below]{$\alpha^F(\beta)$}--(5.3,13);
-\draw[blue](8,3)node[right]{$k^E(\alpha)$}--(5.3,3+8-5.3);
-\draw[blue, dotted](5.3,3+8-5.3)--(5.3,11-5.3/2);
-\draw[blue](5.3,11-5.3/2)--(0,11);
+\draw[blue,ultra thick](8,3)node[right]{$k^E(\alpha)$}--(5.3,3+8-5.3);
+\draw[blue, dotted,ultra thick](5.3,3+8-5.3)--(5.3,11-5.3/2);
+\draw[blue,ultra thick](5.3,11-5.3/2)--(0,11);
 
 
 \end{tikzpicture}
@@ -527,13 +527,13 @@ Figure \ref{fig:thresholds} instead plots  $k^A (\alpha)$ (dashed), $k^B (\alpha
 
  The probability of becoming an entrepreneur in period 1 is therefore
  \[
- P^E_1(\alpha) = (1-\alpha) + \alpha \cdot \mbox{pr}\{k_1 \geq k^E (\alpha) \}.
+ P^E_1(\alpha) = (1-\alpha) + \alpha \cdot \mbox{pr}\{k_1 \geq k^E (\alpha,\beta) \}.
  \]
  Note that the first part of the above expression is decreasing in $\alpha$, while the second one is increasing in $\alpha$, discontinuously so at $\alpha=\alpha^F(\beta)$. It follows that, whenever $\alpha^F(\beta) > 0$, at $\alpha=\alpha^F(\beta)$ there is a first order jump in the number of entrepreneurs.\footnote{The presence of this jump is an artifact of the fact that firms success has constant value equal to 1. In a previous version of this paper, the value of firms' success was drawn randomly at the beginning of each period. In that version of the model, the probability of becoming an entrepreneur is continuous. Also in that version of the model, as $\alpha$ increases the probability of an efficient allocation within firms decreases. Hence, all results are identical to those presented here, but their derivation is significantly lengthier. }   This is due to the fact that firms change their task allocations, switching from the efficient one (for $\alpha<\alpha^F(\beta)$ ) to the inefficient one (for $\alpha>\alpha^F(\beta)$ ). Hence, it is possible that as the labor market becomes more efficient, fewer people become workers, preferring entrepreneurship instead. 
  
 Because $\alpha^F(\beta)$ is increasing in $\beta$, the above reasoning implies that if $\alpha$ is sufficiently above or below $\alpha^F(\beta)$, then changes in $\beta$ do not affect the probability of becoming an entrepreneur. However, if $\alpha$ is sufficiently close to the threshold $\alpha^F(\beta)$, changes in $\beta$ may affect the probability of becoming an entrepreneur. More precisely, if $\alpha>\alpha^F(\beta)$ but sufficiently close to $\alpha^F(\beta)$, as $\beta$ increases firms will be able to switch to task $A$, leading to a drop in the probability of becoming an entrepreneur. Hence, as contracting inefficiencies become less severe, fewer people choose entrepreneurship. The following lemma summarizes these observations (its proof is omitted).
 \begin{lemma}\label{lem: p1}
-Suppose $\beta>1-\Omega Q$, so that $\alpha^F(\beta) > 0$. For given $\beta$, there are $\alpha'<\alpha^F(\beta)<\alpha''$ such that $P^E_1(\alpha')<P^E_1(\alpha'')$. For given $\alpha$, $P^E_1(\alpha)$ is weakly decreasing in $\beta$.
+Suppose $\beta>1-\Omega Q$, so that $\alpha^F(\beta) > 0$. For given $\beta$, there are values $\alpha',\alpha''$ such that $\alpha'<\alpha^F(\beta)<\alpha''$ and $P^E_1(\alpha')<P^E_1(\alpha'')$. For given $\alpha$, $P^E_1(\alpha)$ is weakly decreasing in $\beta$.
 \end{lemma}
 % \noindent Figure \ref{fig:parameter restriction} plots the parameter values for which Assumptions \ref{ass:sigma1}, assumption \ref{ass: necessary for learning}  and $\alpha^F(\beta) > 0$ hold, and the above lemma has bite. 
 
@@ -575,18 +575,22 @@ Suppose $\beta>1-\Omega Q$, so that $\alpha^F(\beta) > 0$. For given $\beta$, th
 % }
 % \label{fig:P1}
 % \end{figure}
-Two observations on the above lemma. First, it is possible to derive conditions on the distribution of entrepreneurial projects $F()$ such that the probability of becoming an entrepreneur is locally increasing also far from the threshold $\alpha^F(\beta)$. We focus here on the  threshold because the task allocation of workers and entrepreneurs change around the threshold (and not far from it). As we will see, this has additional implications regarding the wage of former entrepreneurs relative to former workers, and also regarding the value of entrepreneurial failures. The second observation is that there is an interesting interaction between the $\beta$ and $\alpha$. As previously noted, as $\beta$ increases, $\alpha^F(\beta)$ increases, and the slope of $k^E(\alpha)$ weakly decreases, strictly so over some intermediate range of $\alpha$. In this sense, as contracting inefficiencies become less severe, the threshold project determining the choice of entrepreneurship reacts less strongly to a decrease in labor market frictions. If the distribution of entrepreneurial projects $F()$ is uniform, any change in the slope of the threshold $k^E(\alpha)$ immediately translates in a change in the slope of $P^E(\alpha)$: as $\beta$ increases $P^E(\alpha)$ increases less strongly in $\alpha$, which means that $\beta$ and $\alpha$ are substitutes in $P^E(\alpha)$. Of course, if the distribution of project  is not uniform, this is not necessary the case, because the change in $P^E(\alpha)$ will also depends on the hazard rate of the distribution, and how it changes from $k^A(\alpha)$ to $k^B(\alpha)$.
+It is possible to derive conditions on the distribution of entrepreneurial projects $F()$ such that the probability of becoming an entrepreneur is locally increasing also far from the threshold $\alpha^F(\beta)$. We focus here on the  threshold because the task allocation of workers and entrepreneurs change around the threshold (and not far from it). As we will see, this has additional implications regarding the wage of former entrepreneurs relative to former workers, and also regarding the value of entrepreneurial failures. 
+
+We note an interesting interaction between the two sources of market imperfections, labor ($\alpha$) and contracting ()$\beta$). As $\beta$ increases, $\alpha^F(\beta)$ increases, and the slope of $k^E(\alpha)$ weakly decreases, strictly so over some intermediate range of $\alpha$. In this sense, as contracting inefficiencies become less severe, the marginal project determining the choice of entrepreneurship reacts less strongly to a decrease in labor market frictions. If the distribution of entrepreneurial projects $F(k)$ is uniform, any change in the slope of the threshold $k^E(\alpha)$ immediately translates in a change in the slope of $P^E(\alpha)$: as $\beta$ increases $P^E(\alpha)$ increases less strongly in $\alpha$, which means that $\beta$ and $\alpha$ are substitutes in $P^E(\alpha)$. Of course, if the distribution of project is not uniform, this is not necessary the case, because the change in $P^E(\alpha)$ will also depends on the hazard rate of the distribution, and how it changes from $k^A(\alpha)$ to $k^B(\alpha)$.\footnote{%
+Indeed, the slope of $P^E(\alpha)$ is equal to $-f(k^E(\alpha)\left(\frac{F(k^E(\alpha))}{f(k^E(\alpha))} +\alpha\frac{dk^E(\alpha)}{d\alpha} \right)$ which is non linear in $\alpha$ as long as the hazard rate $\frac{F(k)}{f(k)}$ is not linear in $k$. For instance, if $F(k)$ is the exponential distribution with parameter $\frac{1}{\lambda}$, the mean project has value $\lambda$ and teh variation of $P^E(\alpha)$ has opposite sign to $e^{\frac{k^E(\alpha)}{\lambda}-1}-\alpha \frac{\sigma_2(\tau_1)}{\sigma_1(\tau_1)}K(1)$, which is clearly non-linear in $\alpha$, even if $k^E(\alpha)$ is linear in $\alpha$.
+}
 
 
 
-In period 2, instead, all those with $k_2>1$ become entrepreneurs. Those with  $k_2<1$ will be workers if they receive a wage offer, or if they were previously employed (in which case they can continue working for their former employer). Former entrepreneurs with $k_2<1$ who do not receive  a wage offer will remain entrepreneurs.  The probability of becoming an entrepreneur in period 2 is therefore:
+In period 2, all individuals who draw projects $k_2>1$ become entrepreneurs. Those with  $k_2<1$ will be workers if they receive a wage offer, or if they were previously employed (in which case they can continue working for their former employer). Former entrepreneurs with $k_2<1$ who do not receive  a wage offer will remain entrepreneurs.  The probability of becoming an entrepreneur in period 2 is therefore:
 \begin{align*}
 %P_2^E(\alpha)&\equiv (1-\alpha)P_1^E(\alpha)+(1-(1-\alpha)P_1^E(\alpha))\mbox{pr}\{k_2>1\}\\
-P_2^E(\alpha)&\equiv (1-F(1)) + F(1) (1-\alpha)P_1^E(\alpha) %\\
+P_2^E(\alpha)&\equiv (1-F(1)) + F(1) (1-\alpha)P_1^E(\alpha). %\\
 %&=\left(1-\frac{1}{\lambda}\right) +(1-\alpha )P_1^E(\alpha)\frac{1}{\lambda}.
 \end{align*}
 
-Having derived $P_1^E(\alpha)$ and $P_2^E(\alpha)$, we can now compute two commonly used measures of aggregate entrepreneurial activity: the probability of being a serial entrepreneur and the average probability of becoming an entrepreneur across periods.\footnote{In an overlapping generation extension of the model, $P_{(1/2)}$ is the probability that, at any given moment in time an agent is an entrepreneur.}
+We can now compute two commonly used measures of aggregate entrepreneurial activity: the probability of being a serial entrepreneur and the average probability of becoming an entrepreneur across periods.\footnote{In an overlapping generation extension of the model, $P_{(1/2)}$ is the probability that, at any given moment in time an agent is an entrepreneur.}
 The probability of being a serial entrepreneur (that is, an entrepreneur in both periods) is
 $$
 P_{\mbox{serial}}^E(\alpha)\equiv P_1^E(\alpha) \cdot (1-\alpha +  \alpha \cdot (1-F(1)))= P_1^E (\alpha)  \cdot \left(1-\alpha F(1) \right),
@@ -597,7 +601,7 @@ P_{(1/2)}^E(\alpha)&\equiv \frac{1}{2} \left( P_1^E(\alpha) + P_2^E(\alpha) \rig
 &= \frac{1}{2} \left( P_1^E(\alpha) \left(1+(1-\alpha)F(1)\right) + 1 -F(1)  \right). 
 \end{align*} 
 
-Note that $P_{(1/2)}^E(\alpha)$ and $P_{\mbox{serial}}^E(\alpha)$ are strictly increasing in $P^E(\alpha)$. Hence,  they both inherit $ P_1^E(\alpha)$ upward jump. These two observations imply the following corollary.
+Note that $P_{(1/2)}^E(\alpha)$ and $P_{\mbox{serial}}^E(\alpha)$ are strictly increasing in $P_1^E(\alpha)$. Hence,  they both inherit the upward jump of $ P_1^E(\alpha)$ at $\alpha^F(\beta)$. These two observations imply the following corollary.
 
 
 \begin{cor}\label{prop:probability-of-entrepreneurship}
@@ -632,7 +636,7 @@ Suppose $\beta>1-\Omega Q$, so that $\alpha^F(\beta) > 0$. For given $\beta$, th
 
 \subsection{Types of entrepreneurs}
 
-Labor market frictions affect not only the probability of becoming an entrepreneur, but also the type of projects pursued by entrepreneurs and their task allocation. Based on the different motives for becoming an entrepreneur, our framework allows us to distinguish between three types of entrepreneurship: 
+Labor market and contracting frictions affect not only the probability of becoming an entrepreneur, but also the type of projects pursued by entrepreneurs and their task allocation. Based on the different motives for becoming an entrepreneur, our framework allows us to distinguish between three types of entrepreneurship: 
 \begin{itemize}
 \item \textit{Necessity entrepreneurs}: are those who would prefer to work for a firm, but become entrepreneurs because they do not receive any wage offer. In period 1, they are a fraction $1-\alpha$ of the entrepreneurs with $k_1 < k^E(\alpha)$; in period 2, they are a fraction $1-\alpha$ of the entrepreneurs with $k_1 < 1$.
  \item \textit{Opportunity entrepreneurs}: are those who prefer entrepreneurship to working for a firm, even when firms implement the efficient task allocation. In period 1, they are the agents with $k_1>k^A(\alpha)$; in period 2, they are the agents with $k_1>1$.
@@ -643,7 +647,9 @@ Labor market frictions affect not only the probability of becoming an entreprene
 \end{itemize}
 Hence, in period 1 there can be necessity, learning or opportunity entrepreneurs, while in period 2 there can only be necessity or opportunity entrepreneurs.
 
-The left panel of Figure \ref{fig:types_of_entrepreneurship} illustrates how, in period 1, the proportion of different types of entrepreneurs changes with $\alpha$. Note that, by definition, learning entrepreneurs do not exist when the task allocation within firms is efficient, that is when $\alpha<\alpha^F(\beta)$. However, they always exist when  $\alpha>\alpha^F(\beta)$. The right panel of Figure \ref{fig:types_of_entrepreneurship} instead illustrates how the task allocation of entrepreneurs changes with $\alpha$. Note how learning entrepreneurs mostly work on task $A$, but may also work on task $B$. These entrepreneurs would work for a firm if the task allocation within firms was efficient, but instead choose entrepreneurship. Their project value is however sufficiently high that they prefer task $B$.\footnote{Remember that the value of a future success for an entrepreneur is $K(\alpha)$, which is always below the value of a future success for a worker ($K(1)$). Hence, for given $\alpha<1$ and $k_1>1$, it may be efficient to choose task $A$ in firms but task $B$ as an entrepreneur.} It is also possible that opportunity entrepreneurs choose task $A$. This will happen for $\alpha$ close to 1 and $k_1\in(1,K(\alpha)\Omega)$: the agent has a project that is better than that of firms, hence if labor market frictions are negligible this agent will become an entrepreneur. At the same time, the value of this project is relatively low, so this agent will favor learning over short-run profit maximization.  
+The left panel of Figure \ref{fig:types_of_entrepreneurship} illustrates how, in period 1, the proportion of different types of entrepreneurs changes with $\alpha$ (for a fixed value of $\beta$). Note that, by definition, learning entrepreneurs do not exist when the task allocation within firms is efficient, that is when $\alpha<\alpha^F(\beta)$. However, they always exist when  $\alpha>\alpha^F(\beta)$, and their measure is increasing as contracting frictions become more severe (i.e., as $\beta$ decreases). 
+
+The right panel of Figure \ref{fig:types_of_entrepreneurship} illustrates how the task allocation of entrepreneurs changes with $\alpha$. Note how learning entrepreneurs mostly work on task $A$, but may also work on task $B$. These entrepreneurs would work for a firm if the task allocation within firms was efficient, but instead choose entrepreneurship. Their project value is however sufficiently high that they prefer task $B$.\footnote{Remember that the value of a future success for an entrepreneur is $K(\alpha)$, which is always below the value of a future success for a worker ($K(1)$). Hence, for given $\alpha<1$ and $k_1>1$, it may be efficient to choose task $A$ in firms but task $B$ as an entrepreneur.} It is also possible that opportunity entrepreneurs choose task $A$. This will happen for $\alpha$ close to 1 and $k_1\in(1,K(\alpha)\Omega)$: the agent has a project that is better than that of firms, hence if labor market frictions are negligible this agent will become an entrepreneur. At the same time, the value of this project is relatively low, so this agent will favor learning over short-run profit maximization.  
 
 
 
@@ -668,9 +674,9 @@ The left panel of Figure \ref{fig:types_of_entrepreneurship} illustrates how, in
 \draw[dashed](8,6)--(6,8)--(0,11)node[left]{$k^A(\alpha)$};
 \draw[dashed](8,3)--(4.5,6.5)--(0,6.5+2.25)node[left]{$k^B(\alpha)$};
 \draw[dotted](5.3,0)node[below]{$\alpha^F(\beta)$}--(5.3,13);
-\draw[blue](8,3)node[right]{$k^E(\alpha)$}--(5.3,3+8-5.3);
-\draw[blue, dotted](5.3,3+8-5.3)--(5.3,11-5.3/2);
-\draw[blue](5.3,11-5.3/2)--(0,11);
+\draw[blue,ultra thick](8,3)node[right]{$k^E(\alpha)$}--(5.3,3+8-5.3);
+\draw[blue, dotted,ultra thick](5.3,3+8-5.3)--(5.3,11-5.3/2);
+\draw[blue,ultra thick](5.3,11-5.3/2)--(0,11);
 \node at (3.6,3.8) {\footnotesize Necessity entrepreneurs (or workers)};
 \node at (4.8,10.5) {\footnotesize Opportunity entrepreneurs};
 \node at (6.7,6.2) {\footnotesize Learning};
@@ -709,17 +715,23 @@ The left panel of Figure \ref{fig:types_of_entrepreneurship} illustrates how, in
     \label{fig:types_of_entrepreneurship}
 \end{figure}
 
-Despite the fact that both learning and opportunity entrepreneur may work on either task, it is clear that learning entrepreneurs are more likely to choose task $A$ than opportunity entrepreneurs. This is due to the fact that, by definition, learning entrepreneurs work on projects of lower value than opportunity entrepreneurs. Another interesting observation is that, because $k^E(\alpha)$ decreases in $\alpha$ and $K(\alpha)$ increases in $\alpha$, then as $\alpha$ increases entrepreneurs are, on average, more likely to choose task $A$. The task choice of entrepreneurs reacts most strongly to changes in $\alpha$ when we compare values below and above the threshold $\alpha^F(\alpha)$, because learning entrepreneurs do not exist  below the threshold, but exist  above the threshold.
+While both learning and opportunity entrepreneur may work on either task, it is clear that learning entrepreneurs are more likely to choose task $A$ than opportunity entrepreneurs. This is due to the fact that, by definition, learning entrepreneurs work on projects of lower value than opportunity entrepreneurs. Another observation is that, because $k^E(\alpha)$ decreases in $\alpha$ and $K(\alpha)$ increases in $\alpha$, then as $\alpha$ increases entrepreneurs are, on average, more likely to choose task $A$. The task choice of entrepreneurs reacts most strongly to changes in $\alpha$ when we compare values below and above the threshold $\alpha^F(\beta)$, because learning entrepreneurs do not exist  below the threshold, but exist  above the threshold.
 
 
+\subsection{Output}
+In period 1 a fraction $1-\alpha$ of the population will not receive a wage offer and is forced into entrepreneurship, while a fraction $\alpha$ of the population chooses entrepreneurship or wage work depending on the two period output generated by these two options. Hence, the two-period total expected output in the economy is
+\[
+(1-\alpha) \cdot E[W^E(k_1,\alpha)] + \alpha \cdot E[ \max\left\lbrace W^E(k_1,\alpha), W^F(\alpha,\beta) \right\rbrace ].
+\]
+Therefore, for a fixed $W^F(k_1,\alpha)$, total expected output increases with $\alpha$ both because fewer agents become necessity entrepreneurs, and because $E[W^E(k_1,\alpha)]$ increases with $\alpha$. At the same time, $W^F(\alpha,\beta)$ has a downward discontinuity at $\alpha=\alpha^F(\beta)$, and is constant otherwise.  Total output is therefore non-monotonic in $\alpha$: it is increasing for $\alpha \neq \alpha^F(\beta)$ but has downward discontinuity at $\alpha=\alpha^F(\beta)$.
 
-\section{Additional Implications}\label{sec:implications}
+\section{Implications for Career Paths}\label{sec:implications}
 
 \subsection{Wages of Past Workers and Past Entrepreneurs}\label{sec:wages of past workers vs entrepreneurs}
 
 As already discussed in the literature review, our model generates novel predictions with respect to the wage of former workers relative to the wage of former entrepreneurs who change occupation.  As we established in Section \ref{sec:equilibrium}, as $\alpha$ changes, the task allocations of workers and of entrepreneurs change in opposite directions. As $\alpha$ increases, workers are more likely to be allocated to task $\tau=B$ while entrepreneurs are more likely to choose task $\tau=A$.  More precisely, for $\alpha>\alpha^F(\beta)$ sufficiently large,  all workers are allocated to $\tau=B$ and a positive mass of entrepreneurs (the learning entrepreneurs) chooses instead task $A$. It follows, therefore, that for $\alpha$ sufficiently large the period 2 wage of a former entrepreneur is greater than the period-2 wage of a former worker. On the other hand, when $\alpha\leq \alpha^F(\beta)$ all workers are allocated to $\tau_1=A$, while entrepreneurs with a sufficiently valuable project will choose $\tau_1=B$. 
 
-This difference in task allocation translate in differences in period-2 wage. This is immediate for the case $\alpha>\alpha^F(\beta)$, because all former workers chose the least informative task, while some former entrepreneurs chose the most informative task, then when hired by firms former entrepreneurs will receive a higher wage than former workers. In case $\alpha<\alpha^F(\beta)$, all former workers chose the most informative task allocation, while some former entrepreneurs chose the least informative task allocation. Hence, in period 2, former workers are more productive than former entrepreneurs. In this case, the period-2 wage of former workers\textit{ who receive a wage offer }is lower than that of entrepreneurs who are hired by firms. However, in period 2, workers who do not receive a wage offer are paid less than their productivity, so it is a priory unclear   whether former workers as a whole are paid more or less than former entrepreneurs.\footnote{In general, this will depend on the distribution of the entrepreneurial project values: if $\E{k_2|k_2<1}$ is close to 1, then workers who do not receive a wage offer are nonetheless paid almost their productivity; while if $\E{k_2|k_2<1}$ is close to zero, these workers do not receive anything.  }
+This difference in task allocation translate in differences in period-2 wage. This is immediate for the case $\alpha>\alpha^F(\beta)$, because in the first period all former workers work on the least informative task, while some former entrepreneurs chose the most informative task. Hence, if hired by firms, former entrepreneurs will receive a higher wage than former workers. In case $\alpha<\alpha^F(\beta)$, all former workers chose the most informative task allocation, while some former entrepreneurs chose the least informative task allocation. Hence, in period 2, former workers are more productive than former entrepreneurs. In this case, the period-2 wage of former workers\textit{ who receive a wage offer }is lower than that of entrepreneurs who are hired by firms. However, in period 2, workers who do not receive a wage offer are paid less than their productivity, so it is a priory unclear   whether former workers as a whole are paid more or less than former entrepreneurs.\footnote{In general, this will depend on the distribution of the entrepreneurial project values: if $\E{k_2|k_2<1}$ is close to 1, then workers who do not receive a wage offer are nonetheless paid almost their productivity; while if $\E{k_2|k_2<1}$ is close to zero, these workers do not receive anything.  }
 Note, however, that  if $\beta$ is large (i.e. degree of contract incompleteness is low), $\alpha^F(\beta)$ is also large. In this case, there exists  an $\alpha<\alpha^F(\beta)$ sufficiently large so that the number of workers not receiving a wage offer is low and, on average, former entrepreneurs  receive \textit{lower} wages compared to former workers of equivalent characteristics. 
 
 There are unfortunately few empirical analysis relative to the compensations of former entrepreneurs who change occupation. Nevertheless, our results are consistent with the existing empirical evidence. \cite{hamilton2000does} shows that US entrepreneurs who leave entrepreneurship and re-enter the labor market after some years earn higher wages than comparable workers: the median entrepreneur returning to paid employment after 10 years as an entrepreneur earns a wage that is 15\% higher than a comparable worker who never left employment\footnote{See Table 6 and the discussion on pages 625-626 of \cite{hamilton2000does}. Hamilton notes that this result is consistent with the findings of \cite{evans1990}.  Both  \cite{daly2015long} and \cite{Hincapie2020} find similar results, using again US data.} See also \cite{luzzi2016individual}, who show that in Norway former entrepreneurs earn a positive wage premium.  Our model suggests an opposite result for high labor market friction economies (the wage of former entrepreneurs is lower than the wage of workers who have never left employment) which is consistent with the finding in \citet*{baptista2012former} for Portugal.\footnote{Neither \citet{hamilton2000does} nor \citet*{baptista2012former} discuss why an agent will leave entrepreneurship.}
@@ -727,10 +739,9 @@ There are unfortunately few empirical analysis relative to the compensations of 
 %With respect to the instantaneous payoffs of workers relative to that of entrepreneurs, which one should be larger is ambiguous and depends on the model's parameters. For example, if $\lambda=\alpha=1$, there are only learning entrepreneurs who are more likely to fail and work on projects of lower values of firms. Hence entrepreneurs earn less than workers. But for other parameter values the result may change. For example, if $\lambda$  is sufficiently large, then entrepreneurs, on average, work on very valuable projects and therefore may earn more than workers.
 
 \subsection{The Value of Entrepreneurial Failures}
-\todo[inline]{In this section, we used to make many references to "if $\lambda$ is sufficiently low", in a way that was not very formal. I changed it (because we do not have $\lambda$ anymore) and also tried to improve. I think there is still some work to do}
-A failure can be beneficial to an agent if it allows a better allocation of talent in the next period. As we will show shortly, failures have this property only if the agent has worked on the advanced task  \textit{and if} talent is horizontal. 
+A failure can be beneficial to an agent if it allows for a better allocation of talent in the next period. As we will show shortly, failures have this property only if the agent has worked on the advanced task  \textit{and if} talent is horizontal. 
 
- Figure \ref{fig: success 2} illustrates how the maximum probability of success $\pi^M(p_t)$  varies as a function of the belief that the agent is a high type.\footnote{This probability is obtained by allocating an agent to the task with the highest probability of success, see Equation \ref{maxp} for the formal definition.} As is apparent,  when talent is vertical, the success probability is monotonically increasing, but if instead talent is horizontal, the success probability is non monotonic. That is, if talent is horizontal, an agent is least productive when there is probability $p^*$ that he is a high type, and productivity increases as the agent becomes more likely to be either a $h$ type or a $l$ type. 
+ Figure \ref{fig: success 2} illustrates how the maximum probability of success $\pi^M(p_t)$  varies as a function of the belief that the agent is a high type.\footnote{This probability is obtained by allocating an agent to the task with the highest probability of success, see Equation \ref{maxp} for the formal definition.} As is apparent,  when talent is vertical, the success probability is monotonically increasing, but if instead talent is horizontal, the success probability is non monotonic. That is, if talent is horizontal, an agent is least productive when there is a probability $p^*$ that he is a high type, and productivity increases as the agent becomes more likely to be either a $h$ type or a $l$ type. 
 
 
 
@@ -786,7 +797,7 @@ A failure can be beneficial to an agent if it allows a better allocation of tale
   \label{fig: success 2}
 \end{figure}
 %
-Remember from Section \ref{sec:learning} that when talent is vertical, failures reduce the probability of being a $h$ type (more so when the failure is at task $A$) since $h$ types are more likely to succeed than $l$ types at any task. Hence, when talent is vertical failures are always \textit{bad news} because they decrease the probability of success in period 2 relative to the initial probability of success, that is:
+We established in Section \ref{sec:learning} that when talent is vertical, failures reduce the probability of being a $h$ type (more so when the failure is at task $A$) since $h$ types are more likely to succeed than $l$ types at any task. Hence, when talent is vertical failures are always \textit{bad news} because they decrease the probability of success in period 2 relative to the initial probability of success, that is:
 \[
 \pi^M(p_2(\tau_1,0))<\pi^M(p_1) \mbox{ for all } \tau_1\in \{A,B\}.
 \]
@@ -820,7 +831,7 @@ Our model explains these different values of failure if talent is \emph{horizont
 an absolute advantage at different tasks.  Instead, when talent is \emph{vertical} (that is, the same agent has an absolute advantage at all tasks) failures are always bad news, independently of the level of labor market frictions, a finding which seems counterfactual. 
 
 \subsection{Age Profile of Entrepreneurs}
-At $\alpha=1$, there are no necessity entrepreneurs. Furthermore, in period 2, and agent with project value equal to that of firms is indifferent between joining a firm or becoming an entrepreneur. However, in period 1 such agent strictly prefers to become an entrepreneur, because this allows him to learn: to implement task $A$ instead of $B$. 
+At $\alpha=1$, there are no necessity entrepreneurs and in period 2 an agent with project value equal to that of firms is indifferent between joining a firm or becoming an entrepreneur. However, in period 1 such an agent strictly prefers to become an entrepreneur, because this allows him to learn: to implement task $A$ instead of $B$. 
 By continuity, therefore, for $\alpha$ sufficiently large young agents are more likely than old agents to become entrepreneurs.
 
 %As $\alpha=1$ since there are no necessity entrepreneurs and learning entrepreneurs only in period 1, there are more young than old entrepreneurs. As $\alpha=0$, the necessity motive is first order and 
@@ -831,7 +842,7 @@ For lower values of $\alpha$, however,  other effects come into play. % Remember
 For example, in period 1 agents anticipate that, if they become entrepreneurs, they may not be able to find a job in the future. This concern is absent in period 2. It is therefore possible that, for some intermediate $\alpha$, there are more entrepreneurs in period 2 than in period 1. 
 
 We are not aware of any evidence linking  the probability of becoming an entrepreneur at different ages with the degree of labor market friction. Using US data, \cite{Hincapie2020} shows that people are the most likely to become entrepreneurs when in their mid thirties.  This is consistent with our model for the ``low labor market friction'' case provided that we interpret ``mid thirties'' as part of  period 1 of the model (which is the only period of our model in which learning is valuable).
-A  recent  paper by \cite*{Azoulay2020} shows that old entrepreneurs are more likely \textit{to succeed} than young entrepreneurs. This is consistent with the model, because experience generates learning (independently from an agent occupation or task allocation), which can then be used in the choice of task allocation.
+A  recent  paper by \cite*{Azoulay2020} shows that old entrepreneurs are more likely \textit{to succeed} than young entrepreneurs. This is consistent with the model, because experience generates learning (independently from an agent occupation or task allocation), which can then be used in the choice of task allocation.\todo[inline]{I do not understand this last sentence: do you have in mind learning as in our model or learning-by-doing?}
 
 \subsection{Other comparative statics}
 
@@ -853,23 +864,19 @@ If this is interesting we can probably formalize it better.
 
 }
 
+\todo[inline]{Not sure: the difficulty of making comparative statics with respect to $F$ is similar to those encountered in models with real options: need to make sure that the shifts happen "at the right place".}
+
 % The degree of contracting frictions is measured by $\beta$, with higher values corresponding to lower frictions.  For given $\alpha$, as $\beta$ increases firms are better able to capture the value of learning their workers' talent. As a consequence, they are more likely to implement task $\tau_1=A$, thus eliminating the learning motive for entrepreneurship. Hence, for given $\alpha$, increasing $\beta$ (weakly) decreases the probability of becoming and entrepreneur.
 
 % Increases in $\lambda$ instead lead to an increase in the probability of becoming an entrepreneur. This is because of a direct effect: good ideas are more likely, leading to more opportunity entrepreneurship. Furthermore, \textit{future} good ideas are more likely which implies two things. First, workers who do not receive a wage offer at the beginning of period 2 are more likely to leave their firm, therefore making learning less likely to occur within firms (i.e., $\alpha^F(\beta)$ decreases). Second, learning becomes more valuable because future successes are more valuable. Overall, the proportion of learning entrepreneurs increases. 
 
 
 
-\subsection{Output}\todo[inline]{maybe this should go in the "main" section (section 5). It is kind of neat and fits well next to the fact that entrepreneurship is non-monotonic in $\alpha$. Note however that it is not in line with empirical evidence: places with higher labor market frictions (EU) should have higher outut than places with lower market frictions (US)}
-In period 1 a fraction $1-\alpha$ of the population will not receive a wage offer and is forced into entrepreneurship, while a fraction $\alpha$ of the population chooses entrepreneurship or wage work depending on the two period output generated by these two options. Hence, the two-period total expected output in the economy is
-\[
-(1-\alpha) \cdot E[W^E(k_1,\alpha)] + \alpha \cdot E[ \max\left\lbrace W^E(k_1,\alpha), W^F(\alpha) \right\rbrace ].
-\]
-Therefore, for a fixed $W^F(k_1,\alpha)$, total expected output increases with $\alpha$ both because fewer agents become necessity entrepreneurs, and because $E[W^E(k_1,\alpha)]$ increases with $\alpha$. At the same time, $W^F(\alpha)$ has a downward discontinuity at $\alpha=\alpha^F(\beta)$, and is constant otherwise.  Total output is therefore non-monotonic in $\alpha$: it is increasing for $\alpha \neq \alpha^F(\beta)$ but has downward discontinuity at $\alpha=\alpha^F(\beta)$.
 
 
 
 
-\section{Conclusion}\label{conclusion}
+\section{Discussion}\label{conclusion}
 %
 We have shown that, when contracts are incomplete, occupational choice can be partially explained by the difference in decision rights across occupations. This approach allows us to highlight a novel motive for entrepreneurship (learning one's comparative advantage) that is especially important when firms compete fiercely for workers. The literature already showed  that learning one's comparative advantage is an important driver of \textit{career} choices and wage dynamics across firms. We highlight its importance in explaining \textit{occupational} choices and the resulting wage dynamics.
 
@@ -881,14 +888,14 @@ Financial constraints are a barrier to entry into entrepreneurship. In our model
 %In this case, therefore, labor-market frictions and financial constraints are complementary since they both increase the likelihood that learning will occur within firms.
 %However, if labor market frictions are sufficiently low, independently of the presence of financial constraints, learning cannot occur within firms and some agents may become learning entrepreneurs.
 
-There is an element of learning by doing in our model because agents acquire information about their comparative advantage, are better able to match their talent to a task, and therefore increase their productivity over time.  We do not however allow agents to increase their productivity on a given task by simply working on that task, that is, there is no task-specific human capital accumulation (see \citealp{gibbons1999theory} and \citealp{gibbons2004task}).
+There is an element of learning-by-doing in our model because agents acquire information about their comparative advantage, are better able to match their talent to a task, and therefore increase their productivity over time.  We do not however allow agents to increase their productivity on a given task by simply working on that task, that is, there is no task-specific human capital accumulation (see \citealp{gibbons1999theory} and \citealp{gibbons2004task}).
 Our results stand as long as this increase in productivity is small compared to the benefit of learning one's comparative advantage.  
   
 
-We have assumed that the production process involves only one task. By contrast, \citet{lazear2004balanced} assumes that workers work at a single task while entrepreneurs work at multiple tasks. He shows, both theoretically and empirically, that people with a more balanced skill set enter entrepreneurship. \citet*{aastebro2011stars}, building on \citet{lazear2004balanced}, propose a model in which agents choose between self-employment (in which case they work on multiple tasks) and wage work (in which case they are allocate to a specific task). Exogenous frictions prevent both the efficient assignment of agents to firms, and also the efficient assignment of workers to tasks. These frictions are the reason why some agents may become self employed. Both in \citet{lazear2004balanced}  and \citet{aastebro2011stars} agents' productivity at different tasks are perfectly known, and hence there is no learning. This implies that, for example, these models do not  make predictions with respect to the wage of former entrepreneurs.
+We have assumed that the production process involves only one task. By contrast, \citet{lazear2004balanced} assumes that workers work at a single task while entrepreneurs work at multiple tasks. He shows, both theoretically and empirically, that people with a more balanced skill set enter entrepreneurship. \citet*{aastebro2011stars}, building on \citet{lazear2004balanced}, propose a model in which agents choose between self-employment (in which case they work on multiple tasks) and wage work (in which case they are allocated to a specific task). Exogenous frictions prevent both the efficient assignment of agents to firms, and also the efficient assignment of workers to tasks. These frictions are the reason why some agents may become self employed. Both in \citet{lazear2004balanced}  and \citet{aastebro2011stars} agents' productivity at different tasks are perfectly known, and hence there is no learning. This implies that, for example, these models do not  make predictions with respect to the wage of former entrepreneurs.
 It would be interesting to add uncertainty about talent to Lazear's framework, and study whether learning affects agents' occupational choices. This extension is left for future work. 
 
-Finally, one may be tempted to interpret the case of high labor market frictions as illustrative of developing countries, and there is indeed ample evidence that many people living in developing countries are ``reluctant'' entrepreneurs  \citep{pooreconomics}. However, we refrain from this temptation. We use the model to explore the effect of labor market frictions keeping everything else constant. This may be a reasonable way to proceed when comparing countries (such as the US and European countries) that have different levels of labor market frictions but are otherwise similar in their contracting abilities, the development of their financial markets, and their level of human capital. But this is hardly the case for developing countries.  These other dimensions are not part of our model but are likely to affect the type, frequency and market rewards of entrepreneurial ventures.
+Finally, one may be tempted to interpret the case of high labor market frictions as illustrative of developing countries, and there is indeed ample evidence that many people living in developing countries are ``reluctant'' entrepreneurs  \citep{pooreconomics}. However, we refrain from this temptation. We use the model to explore the effect of labor market and some contracting frictions keeping everything else constant. This may be a reasonable way to proceed when comparing countries such as the US and European countries that are otherwise similar in their contracting abilities,legal enforcement, the development of their financial markets, and their level of human capital. But this is hardly the case for developing countries. These other dimensions are not part of our model but are likely to affect the type, frequency and market rewards of entrepreneurial ventures.
 
 
 
