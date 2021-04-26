@@ -85,12 +85,12 @@ be the learning index.  The continuation value of an entrepreneur is
 and can be rewritten as 
 %
 \begin{equation}\label{continuation_value}
-w(\alpha)=\E k +\alpha \Delta 
+w(\alpha)=\E k +\alpha \delta 
 \end{equation}
 %
-where $\Delta$ is 
+where $\delta$ is the option value of being a worker instead of an entrepreneur:
 \begin{equation}\label{option-value}
-    \Delta:=\E{\max(k,1)} -\E {k}.
+    \delta:=\E{\max(k,1)} -\E {k}.
 \end{equation}
 
 The continuation value of a worker is equal to $w(1)$.
@@ -118,7 +118,7 @@ Firms capture a second period profit only if a worker does not get offers, hence
 Now, $\E{\max(1-k,0)}=1-\E{\min(k,1)}$. A firm is therefore willing to implement task $A$ in the first period of employment when
 %
 \begin{equation}
-    \alpha \leq \alpha^F(\beta):=1-\theta  (1-\beta)\E{\max(1-k,0)}.
+    \alpha \leq \alpha^F(\beta):=1-\theta  (1-\beta)\delta.
 \end{equation}
 %
 \begin{remark}
@@ -187,7 +187,7 @@ Note that the value of $\beta$ affects $k^E(\alpha)$ only for $\alpha>\alpha^F(\
 
 
 
-\subsection{No Contracting Friction: $\beta=1$.} In this case no firm is short-termist. As we have seen, $k^A(\alpha)$ is increasing and $k^E(\alpha)$ is a decreasing function of $\alpha$. It is always the case that $k^E(1)<k^A(1)$, but whether or not $k^E(0)>k^A(0)$ depends on the option $\Delta$.
+\subsection{No Contracting Friction: $\beta=1$.} In this case no firm is short-termist. As we have seen, $k^A(\alpha)$ is increasing and $k^E(\alpha)$ is a decreasing function of $\alpha$. It is always the case that $k^E(1)<k^A(1)$, but whether or not $k^E(0)>k^A(0)$ depends on the option $\delta$.
 
 Assume by way of contradiction that  $k^E(1)> k^A(1)$. Hence the marginal entrepreneur will choose not to experiment and do task $B$. Therefore \eqref{kE} implies that 
 %
@@ -197,19 +197,19 @@ Assume by way of contradiction that  $k^E(1)> k^A(1)$. Hence the marginal entrep
     &=\frac{\sigma_1(A)}{\sigma_1(B)}+\left(1-\frac{\sigma_1(A)}{\sigma_1(B)}\right)k^A(1)\\ 
     &<k^A(1)
 \end{align*}
-where the last inequality follows $k^A(1)>1$ by our assumption \ref{A-efficient} that task $A$ is output efficient in firms. Therefore $k^E(1)<k^A(1)$. Note that when $k^E(\alpha)<k^A(\alpha)$, $k^E(\alpha)=1+\frac{\sigma_2(A)}{\sigma_1(A)}\Delta(1-\alpha)$, hence that $k^E(1)=1$.
+where the last inequality follows $k^A(1)>1$ by our assumption \ref{A-efficient} that task $A$ is output efficient in firms. Therefore $k^E(1)<k^A(1)$. Note that when $k^E(\alpha)<k^A(\alpha)$, $k^E(\alpha)=1+\frac{\sigma_2(A)}{\sigma_1(A)}\delta(1-\alpha)$, hence that $k^E(1)=1$.
 
 At $\alpha=0$, if $k^E(0)<k^A(0)$, the marginal entrepreneur does task $A$ and therefore,
 \begin{align*}
-    k^E(0)&=1+\frac{\sigma_2(A)}{\sigma_1(A)}\Delta\\ 
+    k^E(0)&=1+\frac{\sigma_2(A)}{\sigma_1(A)}\delta\\ 
 \end{align*}
 which is indeed smaller that $k^A(0):=\theta \E k$ only if $\theta$ is high enough
 %
 \begin{lemma}\label{lem:beta=1}
     If $\beta=1$, 
     \begin{enumerate}[(i)]
-        \item (High Learning Benefit) When $1+\frac{\sigma_2(A)}{\sigma_1(A)}\Delta<\theta \E k$, the marginal entrepreneur $k^E(\alpha)$ does task $A$ for any value of $\alpha$.
-        \item (Low Learning Benefit) If $1+\frac{\sigma_2(A)}{\sigma_1(A)}\Delta>\theta \E k$, there exists $\alpha^*$ such that the marginal entrepreneur $k^E(\alpha)$ does $A$ if $\alpha>\alpha^*$ and does $B$ otherwise.
+        \item (High Learning Benefit) When $1+\frac{\sigma_2(A)}{\sigma_1(A)}\delta<\theta \E k$, the marginal entrepreneur $k^E(\alpha)$ does task $A$ for any value of $\alpha$.
+        \item (Low Learning Benefit) If $1+\frac{\sigma_2(A)}{\sigma_1(A)}\delta>\theta \E k$, there exists $\alpha^*$ such that the marginal entrepreneur $k^E(\alpha)$ does $A$ if $\alpha>\alpha^*$ and does $B$ otherwise.
     \end{enumerate}
 \end{lemma}
 %
@@ -221,7 +221,7 @@ which is indeed smaller that $k^A(0):=\theta \E k$ only if $\theta$ is high enou
 We can now evaluate the change in the measure of entrepreneurs as $\alpha$ varies. In a high learning environment, the condition in Proposition \ref{prop:change-ent} reduces to
 %
 \[
-\alpha \frac{\sigma_2(A)}{\sigma_1(A)}\Delta \geq \frac{F(k^E(\alpha))}{f(k^E(\alpha))}, 
+\alpha \frac{\sigma_2(A)}{\sigma_1(A)}\delta \geq \frac{F(k^E(\alpha))}{f(k^E(\alpha))}, 
 \]
 %
 By assumption \ref{ass:hazard-rate} and $k^E(\alpha)$ decreasing in $\alpha$, and the displayed condition is more likely to be satisfied the larger $\alpha$ is. At $\alpha=1$, $\frac{F(k^E(\alpha))}{f(k^E(\alpha))}=\frac{F(1)}{f(1)}$. At $\alpha=0$, the condition is clearly violated.
@@ -255,7 +255,7 @@ By assumption \ref{ass:hazard-rate} and $k^E(\alpha)$ decreasing in $\alpha$, an
     and the condition for a local increase of entrepreneurs (remembering that $k^E(1)=1$)
     %
     \[
-        \frac{\sigma_2(A)}{\sigma_1(A)}\Delta <e^{\frac{1}{\lambda}-1}
+        \frac{\sigma_2(A)}{\sigma_1(A)}\delta <e^{\frac{1}{\lambda}-1}
     \]
     %
 and there exists $\lambda$ small enough for which the inequality holds.\footnote{%
