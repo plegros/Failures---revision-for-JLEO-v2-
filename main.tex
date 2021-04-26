@@ -261,7 +261,7 @@ In  case of a success, a firm's output is $1$, while an entrepreneur's output is
 Hence, the main differences between the two periods is the possibility of continuing an employment relationship.
 
 
-\paragraph{Equilibrium.}  We solve for the subgame-perfect equilibrium of the model.  We do so by backward induction: we derive the period-2 payoff as a function of period-1 occupation and task choice, we then compute the optimal task choice for given period-1 occupation, and finally derive the optimal period-1 occupation.
+\paragraph{Equilibrium.}  An equilibrium in the second period consists of an occupational choice by individuals and contracts offered by firms such that (i)  firms make zero profit if they compete for an individual, and a firm obtains a share $1-\beta$ of the surplus of an existing worker if no other firm makes an offer and (ii) individuals choose their occupation optimally. An equilibrium in the first period consists of an occupational choice by individuals and contracts offered by firms such that (i) firms make zero profits over the two periods and (ii) individuals choose their occupation to maximize their expected two period surplus, taking as given the continuation values. 
 
 \paragraph{Efficient benchmark.} In what follows, we will compare the equilibrium outcome with a constrained efficient benchmark. In this benchmark agent's talent is unknown and there are labor market frictions, but there are no contracting frictions. That is, our constrained efficient benchmark corresponds to the above model under the assumption that $\beta=1$: a firm and an agent can, if they wish, agree that the entire output will be paid to the agent as bonus. This allows us to make transparent how contracting frictions affect the probability that an agent becomes an entrepreneur.
 
@@ -308,17 +308,13 @@ We can therefore define the expected period-2 probability of success as a functi
 \sigma_2(\tau_1) \equiv \mathbb E_{s_1\in\{0,1\}}\pi^M (p_2(\tau_1,s_1)),
 \end{equation*}
 
-In what follows, we will use the index\todo[inline]{We have used small Greek letters for prob. I would use something else here, because this index is not a prob. Same for the option value below}
+In what follows, we will use the index
 \[
 \Omega \equiv \frac{\sigma_2(A)-\sigma_2(B)}{\sigma_1(B)-\sigma_1(A)},
 \]
 to measure the benefit of learning---given by the increase in period-2 probability of success $\sigma_2(A)-\sigma_2(B)$---relative to its cost---given by the decrease in the period-1 probability of success $\sigma_1(B)-\sigma_1(A)$. As we will see, a meaningful trade-off between short run profit maximization and learning emerges within firms if, and only if, $\Omega$ is positive and sufficiently large (see Assumption \ref{ass: necessary for learning}). We present in Appendix  \ref{sec:appendix-learning}  conditions on the primitives $p_1$, $h_A$, $h_B$, $l_A$ and $l_B$ such that $\sigma_2(A)>\sigma_2(B)$. When these conditions are satisfied and $p_1\rightarrow p^*$,  $\sigma_1(B)-\sigma_1(A)$ becomes arbitrarily small. This is because the initial prior is sufficiently ambiguous so that the reduction in the period-1 probability of success of choosing $\tau_1=A$ over $\tau_1=B$ is negligible. At the same time $\sigma_2(A)-\sigma_2(B)$ remains bounded away from zero, and hence the value of learning becomes arbitrarily large.
 
-
-
-
-
-
+In addition to the index of learning $\Omega$, the ratios $\frac{\sigma_2(A)}{\sigma_1(A)}$ and $\frac{\sigma_2(B)}{\sigma_1(B)}$ will play a role in our analysis and shape the occupational choice and the task assignment in firms.
 
 
 %Finally, note that when $\sigma_1(B)>\sigma_1(A)$, following a failure at task $A$ in period 1 the agent will be allocated to task $B$ in period 2. Instead, when $\sigma_2(A)>\sigma_2(B)$, following a success at task $A$ in period 1, the agent will be allocated at task $A$ in period $2$. As we will discuss later, the period-2 task allocation following a failure or success at task $B$ will depend on the prior $p_1$ and on whether talent is horizontal or vertical.
@@ -337,7 +333,7 @@ In the first subsection we derive the lifetime value of starting a career as a w
  
 
 \paragraph{Lifetime utility of a period-1 entrepreneur.}
-In period 1, an entrepreneur generates $k_1$ in case of success. In period 2, the same agent may receive a wage offer.  If he accepts this offer he earns the full expected return of the firms' project,\footnote{Because period 2 is the last period of the game, firms and workers have the same preferences over task allocation: they prefer the task allocation that maximizes period-2 output. Hence, the exact structure of a period-2 contract (that is, what part is paid as bonus $b$ and what part is paid as fixed wage $f$) is not relevant. } which implies that the choice of becoming an entrepreneur or employee depends on whether the firm's project   or the entrepreneurial project  is more valuable. Such agent, however, may not receive a wage offer, in which case  he will be again an entrepreneur and earn $k_2$ in case of success. Hence, for this agent, the expected value of a period-2 success is\todo[inline]{you used $w(\alpha)$ here but $w$ is wage. Note that we are talking about the value of a success, so we could use kappa, K, or maybe bold k? Here I used K}
+In period 1, an entrepreneur generates $k_1$ in case of success. In period 2, the same agent may receive a wage offer.  If he accepts this offer he earns the full expected return of the firms' project,\footnote{Because period 2 is the last period of the game, firms and workers have the same preferences over task allocation: they prefer the task allocation that maximizes period-2 output. Hence, the exact structure of a period-2 contract (that is, what part is paid as bonus $b$ and what part is paid as fixed wage $f$) is not relevant. } which implies that the choice of becoming an entrepreneur or employee depends on whether the firm's project   or the entrepreneurial project  is more valuable. Such agent, however, may not receive a wage offer, in which case  he will be again an entrepreneur and earn $k_2$ in case of success. Hence, for this agent, the expected value of a period-2 success is
 \[
 K(\alpha) \equiv \alpha \E{\max(k_2,1)}+(1-\alpha) \E{k_2} 
 \]
@@ -351,14 +347,14 @@ Q \equiv \E{\max(1-k_2,0)}=F(1)(1-\E{k_2|k_2<1})
 \]
 It follows that a period-1 entrepreneur generates an expected return over the two periods equal to
 \begin{align*} 
-\sigma_1(\tau_1) k_1+ \sigma_2(\tau_1) K(\alpha)
+\sigma_1(\tau_1) k_1+ \sigma_2(\tau_1) K(\alpha).
 \end{align*}
-
+%
 Hence, a period-1 entrepreneur chooses $\tau_1=A$ whenever
 \begin{align}\label{eq: optimal entrepreneur}
 k_1 \leq  K(\alpha) \Omega
 \end{align}
-That is, the entrepreneur will favor learning over short-run profits whenever the value of a period-1 success relative to the value of a period-2 success is below the value of learning. Note in particular that  as labor-market frictions become more severe the value of a period-2 success decreases and the entrepreneur is more likely to choose task $B$ in period 1.  
+That is, the entrepreneur will favor learning over short-run profits whenever the value of a period-1 success relative to the value of a period-2 success is bounded above by the value of learning. Note in particular that  as labor-market frictions become more severe the value of a period-2 success decreases and the entrepreneur is more likely to choose task $B$ in period 1.  
 
 The above discussion directly implies the following lemma:
 \begin{lemma}
@@ -372,20 +368,12 @@ W^E(k_1,\alpha)=\begin{cases}
 which is continuous and strictly increasing in both arguments.
 \end{lemma}
 
-
-
-
-
-
-
-
-
 \paragraph{Lifetime utility of a period-1 worker.}
 In period-1, a worker generates a return equal to $1$ in case of success. In period-2, the same agent will become an entrepreneur if $k_2>1$. Otherwise, if he does not receive a wage offer he will continue working for his old employer, but if he receives a wage offer he may change employer; in either case he produces $1$ in case of success. Hence, for given period-1 task allocation, the expected output generated over the two periods by a period-1 worker is:
 \[
 \sigma_1(\tau_1)+\sigma_2(\tau_1) K(1).
 \]
-Competition among firms guarantees that the above is also equal to the period-1 worker total lifetime utility for given $\tau_1$. 
+Competition among firms guarantees that this expression is also equal to the period-1 worker total lifetime utility for given $\tau_1$. 
 
 In order for a meaningful tradeoff between  between learning and short-run profit maximization to emerge in firms, it must be the case that the expected sum of the two-period outputs is maximized by implementing $\tau_1=A$, which we assume. 
 %In period $2$, a first period worker generates an expected output of $\mathbb E\max[k_2,1]=\frac{\lambda^2+1 }{2\lambda}$. Therefore, the two-period expected output of a first period worker $\sigma_1(\tau_1)+\sigma_2(\tau_1)\mathbb E\max[k_1,1]$ is maximized at $\tau_1=A$ when the product of the benefit of learning $V$ and the expected second period output is larger than one.
@@ -393,18 +381,19 @@ In order for a meaningful tradeoff between  between learning and short-run profi
 \begin{ass}\label{ass: necessary for learning}
 Total output within firm is maximized by implementing $\tau_1=A$, that is
 \begin{equation}
-1 \leq  K(1) \Omega
+ K(1) \Omega \geq 1
 \end{equation}
 \end{ass}
 %Hence, learning is optimal within firms (in the sense that $\tau_1=A$ maximizes two period-output) whenever the value of a future success is large. Again, the value of a future success is increasing in  $\lambda$ (the value of a future  entrepreneurial success) and  $V$ (the value  of learning). 
 
-However, the output maximizing task allocation may not be incentive compatible. That is because the firm is subject to a moral hazard problem and will choose task $A$ only if an incentive compatibility condition is met.
+However, the output maximizing task allocation may not be incentive compatible because of the moral hazard problem of the firm. We turn to the incentive compatibility condition that insures that the firm will choose an efficient task allocation.
 
-\paragraph{Firms' incentive compatibility.} Remember that when a worker does not receive a wage offer in period 2, his former employer will make him a take-it-or-leave-it offer. It follows that a firm may earn positive profits in period 2. Because firms earn zero profits in equilibrium, these period-2 profits are frontloaded in the period-1 compensation contract offered to the  worker. They are however relevant for deriving the period-1 task allocation. 
+\paragraph{Firms' incentive compatibility.} Remember that when a worker does not receive a wage offer in period 2, his former employer will make him a take-it-or-leave-it offer and a firm may earn positive profits in period 2. Because firms earn zero profits in equilibrium, these period-2 profits are front-loaded in the period-1 compensation contract offered to the  workers. 
 
-Indeed, after a contract $(f,b)$  is signed in period 1, the fixed component $f$ is sunk and the determinants of the optimal task choice are the bonus $b$ and the expected period-2 profits. Choosing task $A$ generates a period-1 opportunity cost equal to $( \sigma_1(B)- \sigma_1(A))(1-b)$, a decreasing function of $b$. By contrast the \textit{future} benefit of choosing task $A$ in the first period is equal to the value of continuing the employment relationship, which in expected terms, is equal to 
+They are however relevant for deriving the period-1 task allocation. Indeed, after a contract $(f,b)$  is signed in period 1, the fixed component $f$ is sunk and the determinants of the optimal task choice are the bonus $b$ and the expected period-2 profits. Choosing task $A$ generates a period-1 opportunity cost equal to $( \sigma_1(B)- \sigma_1(A))(1-b)$, a decreasing function of $b$. By contrast the \textit{future} benefit of choosing task $A$ in the first period is equal to the value of continuing the employment relationship, which in expected terms, is equal to 
 \[(1- \alpha) \sigma_2(\tau_1) \mathbb E[\max \{1-k_2,0\}]=(1-\alpha) \sigma_2(\tau_1) Q.\]
-These profits are decreasing in $\alpha$ and, crucially, for $\alpha<1$ are larger when $\tau_1=A$ than when $\tau_1=B$. That is, because of labor market frictions, in period 2 firms may be able to earn part of the benefit of learning their workers' talent. 
+%
+These profits are decreasing in $\alpha$ and, crucially, for $\alpha<1$ are larger when $\tau_1=A$ than when $\tau_1=B$. Because of labor market frictions, firms may be able to earn  in period 2 part of the benefit of learning their workers' talent. 
 
 Because the largest possible bonus  is $b=\beta$,  the firm can commit to implement task $A$ in the first period if $( \sigma_1(B)- \sigma_1(A))(1-\beta) \leq(\sigma_2(A)-\sigma_2(B))(1-\alpha) Q $, that is when
 %
@@ -413,13 +402,11 @@ Because the largest possible bonus  is $b=\beta$,  the firm can commit to implem
 \end{equation}
 Quite intuitively, the above condition is more likely to hold whenever the value of learning is sufficiently large. It is also more likely to hold when labor market frictions are large and when contracting frictions are low (i.e., high $\beta$). It is also more likely to hold when $Q$ is high, because $Q$ is the expected surplus earned by a firm in period 2 in case the worker does not receive an outside wage offer.
 
-
-
 There is a threshold
 \[
 \alpha^F(\beta) \equiv 1- \frac{1-\beta}{\Omega \cdot Q}.
 \]
-such that for $\alpha \leq \alpha^F(\beta)$, by offering a sufficiently large bonus $b$,  a firm can commit to  implement the most informative task (task $A$).\footnote{ The observation that larger bonuses can generate more learning contrasts with that of \citet{manso2011motivating} who argues that a principal may motivate a worker to experiment by paying a fixed wage initially and a large bonus for success far in the future. The reason for this contrast is that in \cite{manso2011motivating} the worker has a moral hazard problem, while in our model the firm has a moral hazard problem. Hence in our world, if a large bonus is paid to the worker, the firm's payoff is less sensitive to the realization of failures and success and therefore the firm is more likely to choose the learning-maximizing task allocation.} If instead  $\alpha > \alpha^F(\beta)$  firms can only implements task $B$ despite the fact that task $A$ is the output-maximizing one. By construction, $\alpha^F(\beta) <1$ and hence there are always values of $\alpha$ such that firms can only implement task $\tau_1=B$. It is however possible that $\alpha^F(\beta) <0$, in which case firms can only implement task $\tau_1=B$ for all values of $\alpha$.
+such that for $\alpha \leq \alpha^F(\beta)$, by offering a sufficiently large bonus $b$,  a firm can commit to  implement the most informative task (task $A$).\footnote{ The observation that larger bonuses can generate more learning contrasts with that of \citet{manso2011motivating} who argues that a principal may motivate a worker to experiment by paying a fixed wage initially and a large bonus for success far in the future. The reason for this contrast is that in \cite{manso2011motivating} the worker has a moral hazard problem, while in our model the firm has a moral hazard problem. Hence in our world, if a large bonus is paid to the worker, the firm's payoff is less sensitive to the realization of failures and success and therefore the firm is more likely to choose the learning-maximizing task allocation.} If instead  $\alpha > \alpha^F(\beta)$  firms can only implements task $B$ despite the fact that task $A$ is the output-maximizing one. By construction, $\alpha^F(\beta) <1$ and hence there are always values of $\alpha$ such that firms can only implement task $\tau_1=B$. (It is however possible that $\alpha^F(\beta) <0$, in which case firms can only implement task $\tau_1=B$ for all values of $\alpha$. Hence, firms can be short-termists for any value of $\alpha$.)
 
 Competition for workers among firms allows us to reduce the firm's problem to the choice of a task $\tau_1$ that maximizes the two-period total output subject to the incentive compatibility constraints. This leads to the following lemma.
 \begin{lemma}
