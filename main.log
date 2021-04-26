@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.21)  3 DEC 2020 09:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.8.21)  17 APR 2021 19:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/patricklegros/Dropbox/Git_Projects/Failures---Post-RAND--july2019/main.tex
-(/Users/patricklegros/Dropbox/Git_Projects/Failures---Post-RAND--july2019/main.tex
+**/Users/patricklegros/Dropbox/Git_Projects/Failures---revision-for-JLEO-v2-/main.tex
+(/Users/patricklegros/Dropbox/Git_Projects/Failures---revision-for-JLEO-v2-/main.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06> (/usr/local/texlive/2020/texmf-dist/tex/latex/paper/paper.cls
 Document Class: paper 2008/05/30 1.0l LaTeX document class (wm).
@@ -562,11 +562,12 @@ LaTeX Info: Redefining \addtolength on input line 81.
 File: tikzlibrarycalc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
 \c@thm=\count306
-\c@cor=\count307
-\c@prop=\count308
-\c@ass=\count309
-\c@lemma=\count310
-\c@ex=\count311
+\c@prop=\count307
+\c@ass=\count308
+\c@lemma=\count309
+\c@ex=\count310
+\c@remark=\count311
+\c@cor=\count312
  (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2020/03/22 3.42 The Babel package
  (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/switch.def
@@ -577,11 +578,11 @@ Language: american 2017/06/06 v3.3r English support from the babel system
 Language: english 2017/06/06 v3.3r English support from the babel system
  (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2020/03/22 3.42 Babel common definitions
-\babel@savecnt=\count312
+\babel@savecnt=\count313
 \U@D=\dimen277
  (/usr/local/texlive/2020/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
-\bbl@dirlevel=\count313
+\bbl@dirlevel=\count314
 )
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
@@ -591,27 +592,27 @@ Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 (babel)             (\language21) on input line 108.
 ))) (/usr/local/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count314
+\l__kernel_color_stack_int=\count315
 \l__pdf_internal_box=\box62
-) (/Users/patricklegros/Dropbox/Git_Projects/Failures---Post-RAND--july2019/main.aux)
+) (/Users/patricklegros/Dropbox/Git_Projects/Failures---revision-for-JLEO-v2-/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -649,16 +650,16 @@ LaTeX Font Info:    ... okay on input line 65.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count315
+\scratchcounter=\count316
 \scratchdimen=\dimen278
 \scratchbox=\box63
-\nofMPsegments=\count316
-\nofMParguments=\count317
+\nofMPsegments=\count317
+\nofMParguments=\count318
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count318
+\MPscratchCnt=\count319
 \MPscratchDim=\dimen279
-\MPnumerator=\count319
-\makeMPintoPDFobject=\count320
+\MPnumerator=\count320
+\makeMPintoPDFobject=\count321
 \everyMPtoPDFconversion=\toks49
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -667,7 +668,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \AtBeginShipoutBox=\box64
-Package hyperref Info: Link coloring OFF on input line 65.
+Package hyperref Info: Link coloring OFF on input line 66.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
@@ -675,12 +676,12 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count321
+\c@section@level=\count322
 )
-LaTeX Info: Redefining \ref on input line 65.
-LaTeX Info: Redefining \pageref on input line 65.
-LaTeX Info: Redefining \nameref on input line 65.
- (/Users/patricklegros/Dropbox/Git_Projects/Failures---Post-RAND--july2019/main.out) (/Users/patricklegros/Dropbox/Git_Projects/Failures---Post-RAND--july2019/main.out)
+LaTeX Info: Redefining \ref on input line 66.
+LaTeX Info: Redefining \pageref on input line 66.
+LaTeX Info: Redefining \nameref on input line 66.
+ (/Users/patricklegros/Dropbox/Git_Projects/Failures---revision-for-JLEO-v2-/main.out) (/Users/patricklegros/Dropbox/Git_Projects/Failures---revision-for-JLEO-v2-/main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
@@ -690,159 +691,105 @@ Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
 
-Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 65.
+Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 66.
 
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 73.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 74.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 73.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 74.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 74.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 109.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 111.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [4]
-Overfull \hbox (0.35104pt too wide) in paragraph at lines 132--133
- []\T1/cmss/bx/n/12 Co-determination of or-ga-ni-za-tions and oc-cu-pa-tional choices.[] \T1/cmr/m/n/12 Our model
+Overfull \hbox (5.572pt too wide) in paragraph at lines 139--140
+ []\T1/cmss/bx/n/12 Co-determination of or-ga-ni-za-tions and oc-cu-pa-tional choices.[] \T1/cmr/m/n/12 Other mod-
  []
 
-[5] [6] [7] [8] [9] [10] [11] [12]
-Overfull \hbox (3.01117pt too wide) in paragraph at lines 237--238
+[5] [6]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 157.
+ [7] [8] [9] [10] [11] [12] [13]
+Overfull \hbox (3.01117pt too wide) in paragraph at lines 254--255
 []\T1/cmr/m/n/12 After a con-tract is signed, the firm chooses the worker's task. En-trepreneurs
  []
 
-[13] [14pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}) has been already used, duplicate ignored
+[14] [15pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.280 \[
-        p_2(\tau_1,s_1)\equiv \begin{cases}] [15] [16] [17] [18] [19]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[20] [21]
-Overfull \hbox (7.65717pt too wide) in paragraph at lines 485--566
- []|  [][]|  [][] 
- []
-
-[22]
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 587.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/bbm-macros/ubbm.fd
-File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-)
-Overfull \hbox (42.22433pt too wide) detected at line 587
+l.295 \end{align}
+                 ] [16]
+Overfull \hbox (14.93759pt too wide) detected at line 340
 []
  []
 
-
-Overfull \hbox (4.72377pt too wide) in paragraph at lines 590--591
-[]\T1/cmr/m/it/12 Opportunity en-trepreneurs\T1/cmr/m/n/12 : These agents pre-fer en-trepreneur-ship to work-
- []
-
-[23]
-Overfull \hbox (21.97389pt too wide) detected at line 617
-[]
- []
-
-[24]
-<P1.pdf, id=457, 542.025pt x 355.3275pt>
+[17] [18] [19] [20] [21]
+<P1.pdf, id=473, 542.025pt x 355.3275pt>
 File: P1.pdf Graphic file (type pdf)
 <use P1.pdf>
-Package pdftex.def Info: P1.pdf  used on input line 637.
+Package pdftex.def Info: P1.pdf  used on input line 513.
 (pdftex.def)             Requested size: 325.2175pt x 213.19814pt.
- [25] [26 </Users/patricklegros/Dropbox/Git_Projects/Failures---Post-RAND--july2019/P1.pdf>]
-<Paverage.pdf, id=486, 542.025pt x 355.3275pt>
+ [22] [23 </Users/patricklegros/Dropbox/Git_Projects/Failures---revision-for-JLEO-v2-/P1.pdf>]
+<Paverage.pdf, id=497, 542.025pt x 355.3275pt>
 File: Paverage.pdf Graphic file (type pdf)
 <use Paverage.pdf>
-Package pdftex.def Info: Paverage.pdf  used on input line 691.
+Package pdftex.def Info: Paverage.pdf  used on input line 569.
 (pdftex.def)             Requested size: 325.2175pt x 213.19814pt.
- [27] [28 </Users/patricklegros/Dropbox/Git_Projects/Failures---Post-RAND--july2019/Paverage.pdf>] [29] [30] [31]
+ [24] [25 </Users/patricklegros/Dropbox/Git_Projects/Failures---revision-for-JLEO-v2-/Paverage.pdf>]
+Overfull \hbox (2.95753pt too wide) in paragraph at lines 594--595
+\T1/cmr/m/n/12 Hence, in pe-riod 1 there can be ne-ces-sity, learn-ing or op-por-tu-nity en-trepreneurs,
+ []
 
-Package natbib Warning: Citation `azoulay2018age' on page 32 undefined on input line 823.
 
-[32]
-Overfull \hbox (5.62744pt too wide) in paragraph at lines 829--831
+Overfull \hbox (62.77675pt too wide) in paragraph at lines 643--644
+ [][] 
+ []
+
+[26] [27] [28] [29] [30] [31] [32] [33]
+Overfull \hbox (5.62744pt too wide) in paragraph at lines 789--791
 \T1/cmr/m/n/12 be-cause fewer agents be-come ne-ces-sity en-trepreneurs, and be-cause $\OML/cmm/m/it/12 E\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 W[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 k[]; \OT1/cmr/m/n/12 )]$
  []
 
-[33] [34] [35] [36]
-Overfull \hbox (3.1421pt too wide) in paragraph at lines 915--916
+[34] [35] [36]
+Overfull \hbox (3.1421pt too wide) in paragraph at lines 875--876
  []\T1/cmss/bx/n/12 Sufficient con-di-tion for (weak) in-for-ma-tive-ness.[] \T1/cmr/m/n/12 Since the max-i-mum prob-
  []
 
-[37] [38]
-Overfull \hbox (67.12685pt too wide) detected at line 1007
-[]
- []
-
-[39]
-Overfull \hbox (56.1256pt too wide) detected at line 1016
-[]
- []
-
-
-Overfull \hbox (1.16077pt too wide) in paragraph at lines 1016--1018
- \T1/cmr/m/n/12 is pos-i-tive be-cause $[] \OML/cmm/m/it/12 < \OT1/cmr/m/n/12 0$\T1/cmr/m/n/12 , $[] \OML/cmm/m/it/12 < \OT1/cmr/m/n/12 0$\T1/cmr/m/n/12 , and $\OML/cmm/m/it/12 Y\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 K[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 \OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 < Z\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 K[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 \OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 )$
- []
-
-
-Overfull \hbox (95.8542pt too wide) detected at line 1025
-[]\OMS/cmsy/m/n/12 j[] \OT1/cmr/m/n/12 = [] [][] \U/bbm/m/n/12 1\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 0 \OMS/cmsy/m/n/12 ^^T \OML/cmm/m/it/12 k[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 K[];  \OT1/cmr/m/n/12 = 0) \OMS/cmsy/m/n/12 ^^T \OML/cmm/m/it/12 ^^UK[]\OMS/cmsy/m/n/12 g [] \OML/cmm/m/it/12 dK[]
- []
-
-
-Overfull \hbox (77.35283pt too wide) detected at line 1034
-[]
- []
-
-[40]
-Overfull \hbox (44.32199pt too wide) detected at line 1048
-[]
- []
-
-[41]
-Overfull \hbox (4.57343pt too wide) detected at line 1108
-[] [] \OMS/cmsy/m/n/12 ^^U [] []
- []
-
-[42] [43] [44] [45] [46] (/Users/patricklegros/Dropbox/Git_Projects/Failures---Post-RAND--july2019/main.bbl [47] [48] [49] [50])
-
-Package natbib Warning: There were undefined citations.
-
-[51]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1336.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1336.
- (/Users/patricklegros/Dropbox/Git_Projects/Failures---Post-RAND--july2019/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1336.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1336.
+[37] [38] [39] [40] [41] (/Users/patricklegros/Dropbox/Git_Projects/Failures---revision-for-JLEO-v2-/main.bbl [42] [43] [44] [45] [46]) [47]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1123.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1123.
+ (/Users/patricklegros/Dropbox/Git_Projects/Failures---revision-for-JLEO-v2-/main.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1123.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1123.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3248F8025C615E3581EBA60C2A6DDE30;1020.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1336.
+(rerunfilecheck)             Checksum: 846A724DC30BB041502D25C7610491AE;1132.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1123.
  ) 
 Here is how much of TeX's memory you used:
- 21263 strings out of 480608
- 391289 string characters out of 5903630
- 649633 words of memory out of 5000000
- 36461 multiletter control sequences out of 15000+600000
- 566389 words of font info for 114 fonts, out of 8000000 for 9000
+ 21501 strings out of 480608
+ 396298 string characters out of 5903630
+ 651807 words of memory out of 5000000
+ 36698 multiletter control sequences out of 15000+600000
+ 567279 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,16n,87p,1833b,871s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{lemma.6} has been referenced but does not exist, replaced by a fixed one
+ 68i,16n,87p,1692b,868s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{lemma.5} has been referenced but does not exist, replaced by a fixed one
 
- </Users/patricklegros/Library/texlive/2020/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk> </Users/patricklegros/Library/texlive/2020/texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk>{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsi1728.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
-Output written on /Users/patricklegros/Dropbox/Git_Projects/Failures---Post-RAND--july2019/main.pdf (51 pages, 615496 bytes).
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsi1728.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfsx2074.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on /Users/patricklegros/Dropbox/Git_Projects/Failures---revision-for-JLEO-v2-/main.pdf (47 pages, 584301 bytes).
 PDF statistics:
- 878 PDF objects out of 1000 (max. 8388607)
- 760 compressed objects within 8 object streams
- 203 named destinations out of 1000 (max. 500000)
- 247 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 880 PDF objects out of 1000 (max. 8388607)
+ 767 compressed objects within 8 object streams
+ 211 named destinations out of 1000 (max. 500000)
+ 263 words of extra memory for PDF output out of 10000 (max. 10000000)
 

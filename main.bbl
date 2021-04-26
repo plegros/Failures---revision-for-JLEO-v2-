@@ -24,6 +24,12 @@ Antonovics, K. and L.~Golan (2012).
 \newblock Stars and misfits: Self-employment and labor market frictions.
 \newblock {\em Management Science\/}~{\em 57\/}(11), 1999--2017.
 
+\bibitem[\protect\citeauthoryear{Azoulay, Jones, Kim, and Miranda}{Azoulay
+  et~al.}{2020}]{Azoulay2020}
+Azoulay, P., B.~F. Jones, J.~D. Kim, and J.~Miranda (2020).
+\newblock Age and high-growth entrepreneurship.
+\newblock {\em American Economic Review: Insights\/}~{\em 2\/}(1), 65--82.
+
 \bibitem[\protect\citeauthoryear{Baker, Gibbons, and Murphy}{Baker
   et~al.}{1999}]{Baker:1999fv}
 Baker, G., R.~Gibbons, and K.~Murphy (1999).
@@ -50,6 +56,17 @@ Baptista, R., F.~Lima, and M.~T. Preto (2012).
 \newblock {How former business owners fare in the labor market? Job assignment
   and earnings}.
 \newblock {\em European Economic Review\/}~{\em 56\/}(2), 263--276.
+
+\bibitem[\protect\citeauthoryear{Bar-Isaac, Jewitt, and Leaver}{Bar-Isaac
+  et~al.}{2020}]{Bar-Isaac2020}
+Bar-Isaac, H., I.~Jewitt, and C.~Leaver (2020).
+\newblock Adverse selection, efficiency and the structure of information.
+\newblock {\em Economic Theory\/}.
+
+\bibitem[\protect\citeauthoryear{Bruenner, Friebel, Holden, and
+  Prasad}{Bruenner et~al.}{2019}]{Bruenner2019}
+Bruenner, T., G.~Friebel, R.~Holden, and S.~Prasad (2019).
+\newblock Incentives to discover talent.
 
 \bibitem[\protect\citeauthoryear{Canidio and Gall}{Canidio and
   Gall}{2019}]{canidio2013rewarding}
@@ -148,6 +165,13 @@ Grossman, S. and O.~Hart (1986).
   integration.
 \newblock {\em The Journal of Political Economy\/}~{\em 94\/}(4), 691--719.
 
+\bibitem[\protect\citeauthoryear{Guvenen, Kuruscu, Tanaka, and Wiczer}{Guvenen
+  et~al.}{2020}]{Guvenen2020}
+Guvenen, F., B.~Kuruscu, S.~Tanaka, and D.~Wiczer (2020).
+\newblock Multidimensional skill mismatch.
+\newblock {\em American Economic Journal: Macroeconomics\/}~{\em 12\/}(1),
+  210--244.
+
 \bibitem[\protect\citeauthoryear{Hamilton}{Hamilton}{2000}]{hamilton2000does}
 Hamilton, B.~H. (2000).
 \newblock {Does entrepreneurship pay? An empirical analysis of the returns to
@@ -159,11 +183,33 @@ Hellmann, T. (2007).
 \newblock {When do employees become entrepreneurs?}
 \newblock {\em Management Science\/}~{\em 53\/}(6), 919--33.
 
+\bibitem[\protect\citeauthoryear{Hincapi\'e}{Hincapi\'e}{2020}]{Hincapie2020}
+Hincapi\'e, A. (2020).
+\newblock Entrepreneurship over the life cycle: Where are the young
+  entrepreneurs.
+\newblock {\em International Economic Review\/}~{\em 61\/}(2), 617--681.
+
+\bibitem[\protect\citeauthoryear{Holmstr{\"o}m}{Holmstr{\"o}m}{1999}]{holmstrom1999managerial}
+Holmstr{\"o}m, B. (1999).
+\newblock Managerial incentive problems: A dynamic perspective.
+\newblock {\em The review of Economic studies\/}~{\em 66\/}(1), 169--182.
+
 \bibitem[\protect\citeauthoryear{Jeitschko and Mirman}{Jeitschko and
   Mirman}{2002}]{jeitschko_information_2002}
 Jeitschko, T.~D. and L.~J. Mirman (2002).
 \newblock Information and experimentation in short-term contracting.
 \newblock {\em Economic Theory\/}~{\em 19\/}(2), 311--331.
+
+\bibitem[\protect\citeauthoryear{Jovanovic}{Jovanovic}{1979}]{jovanovic1979job}
+Jovanovic, B. (1979).
+\newblock Job matching and the theory of turnover.
+\newblock {\em Journal of political economy\/}~{\em 87\/}(5, Part 1), 972--990.
+
+\bibitem[\protect\citeauthoryear{Lafontaine and Shaw}{Lafontaine and
+  Shaw}{2016}]{NBERw20312}
+Lafontaine, F. and K.~Shaw (2016).
+\newblock Serial entrepreneurship: Learning by doing?
+\newblock {\em Journal of Labor Economics\/}~{\em 34\/}(S2), S217--S254.
 
 \bibitem[\protect\citeauthoryear{Landier}{Landier}{2005}]{landier_entrepreneurship_2005}
 Landier, A. (2005).
@@ -208,6 +254,13 @@ Manso, G. (2011).
 Manso, G. (2016).
 \newblock Experimentation and the returns to entrepreneurship.
 \newblock {\em Review of Financial Studies\/}~{\em 29\/}(9), 2319--2340.
+
+\bibitem[\protect\citeauthoryear{Meyer}{Meyer}{1994}]{Meyer1994}
+Meyer, M.~A. (1994).
+\newblock The dynamics of learning with team production: Implications for task
+  assignment.
+\newblock {\em The Quarterly Journal of Economics\/}~{\em 109\/}(4),
+  1157--1184.
 
 \bibitem[\protect\citeauthoryear{OECD}{OECD}{2013}]{oecd2013}
 OECD (2013).
@@ -255,5 +308,10 @@ Tervi\"o, M. (2009).
 Vereshchagina, G. and H.~A. Hopenhayn (2009).
 \newblock Risk taking by entrepreneurs.
 \newblock {\em The American Economic Review\/}~{\em 99\/}(5), 1808--1830.
+
+\bibitem[\protect\citeauthoryear{Waldman}{Waldman}{1984}]{waldman1984job}
+Waldman, M. (1984).
+\newblock Job assignments, signalling, and efficiency.
+\newblock {\em The RAND Journal of Economics\/}~{\em 15\/}(2), 255--267.
 
 \end{thebibliography}

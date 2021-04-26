@@ -3,7 +3,11 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: chicago.bst
 Database file #1: bibliography.bib
-Warning--I didn't find a database entry for "azoulay2018age"
+Warning--no number and no volume in Bar-Isaac2020
+Warning--page numbers missing in Bar-Isaac2020
+Warning--no journal in Bruenner2019
+Warning--no number and no volume in Bruenner2019
+Warning--page numbers missing in Bruenner2019
 Warning--page numbers missing in canidio2016
 Warning--no volume for gottshalkGreene2012
 Warning--page numbers missing in gottshalkGreene2012
@@ -16,45 +20,45 @@ Warning--no number and no volume in macdonald1982information
 Warning--no number and no volume in macdonald1982market
 Warning--no number and no volume in pastorino2013careers
 Warning--page numbers missing in pastorino2013careers
-You've used 42 entries,
+You've used 52 entries,
             2861 wiz_defined-function locations,
-            872 strings with 10889 characters,
-and the built_in function-call counts, 28549 in all, are:
-= -- 2471
-> -- 1990
+            936 strings with 12346 characters,
+and the built_in function-call counts, 35316 in all, are:
+= -- 3038
+> -- 2467
 < -- 2
-+ -- 594
-- -- 714
-* -- 2529
-:= -- 5204
-add.period$ -- 126
-call.type$ -- 42
-change.case$ -- 290
-chr.to.int$ -- 41
-cite$ -- 54
-duplicate$ -- 746
-empty$ -- 1752
-format.name$ -- 830
-if$ -- 5252
++ -- 732
+- -- 874
+* -- 3162
+:= -- 6438
+add.period$ -- 155
+call.type$ -- 52
+change.case$ -- 362
+chr.to.int$ -- 51
+cite$ -- 69
+duplicate$ -- 921
+empty$ -- 2173
+format.name$ -- 1010
+if$ -- 6491
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 43
-newline$ -- 212
-num.names$ -- 418
-pop$ -- 186
+missing$ -- 53
+newline$ -- 261
+num.names$ -- 518
+pop$ -- 229
 preamble$ -- 1
-purify$ -- 543
+purify$ -- 675
 quote$ -- 0
-skip$ -- 825
+skip$ -- 1000
 stack$ -- 0
-substring$ -- 1629
-swap$ -- 242
+substring$ -- 2037
+swap$ -- 299
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 806
-warning$ -- 12
-while$ -- 442
+type$ -- 1006
+warning$ -- 17
+while$ -- 542
 width$ -- 0
-write$ -- 549
-(There were 13 warnings)
+write$ -- 677
+(There were 17 warnings)
